@@ -14,7 +14,7 @@
 }
 
 .navbar activebar {
-  color: rgb(78, 149, 230)
+  color: rgb(114,137,218)
 }
 
 .navbar inactivebar{
@@ -59,4 +59,6 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 125%;
   max-width: 50%;
+  line-height: 175%;
+  text-align: center;
 }
