@@ -13,14 +13,20 @@
   gap: 2%;
 }
 
+.navbar activebar {
+  color: rgb(78, 149, 230)
+}
 
+.navbar inactivebar{
+  color:grey;
+}
 
 .navbar a {
   color: white;
   text-decoration: none;
   text-align: center;
   padding: 1% 2%;
-  border-radius: 20%;
+  border-radius: 10%;
   transition: background-color 0.3s ease;
   background-color: transparent;
 }
