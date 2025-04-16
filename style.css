@@ -4,11 +4,36 @@
   text-align: center;
 }
 
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1% 2%;
+  border-radius: 20%;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+
+.navbar a:hover {
+  background-color: hsl(0, 0%, 10%);
+}
+
 .content {
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
 }
 
 .imageleft {
@@ -26,6 +51,6 @@
 .paragraph {
   color: bisque;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.25rem;
+  font-size: 125%;
   max-width: 50%;
 }
