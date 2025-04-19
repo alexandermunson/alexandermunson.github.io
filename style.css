@@ -4,7 +4,25 @@
   box-sizing: border-box;
 }
 
-.title1 {
+.titleindex {
+  color: rgb(114,137,218);
+  font-family: "Boldonse", system-ui;
+  text-align: center;
+  text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.titleabout {
+  color: rgb(114,137,218);
+  font-family: "Boldonse", system-ui;
+  text-align: center;
+  text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.titleprojects {
+  color: rgb(86, 223, 111);
+  font-family: "Boldonse", system-ui;
+  text-align: center;
+  text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.titlecontact {
   color: rgb(114,137,218);
   font-family: "Boldonse", system-ui;
   text-align: center;
@@ -20,10 +38,18 @@
   gap: 2%;
 }
 
-.navbar activebar {
+.navbar activebarindex {
   color: rgb(114,137,218);
 }
-
+.navbar activebarabout {
+  color: rgb(114,137,218);
+}
+.navbar activebarprojects {
+  color: rgb(86, 223, 111);
+}
+.navbar activebarcontact {
+  color: rgb(216, 95, 95);
+}
 .navbar inactivebar{
   color:grey;
 }
@@ -126,7 +152,7 @@
 .image-container {
   position: relative;
   width: 100vw;
-  height: 300px; /* same as .gimg height */
+  height: 300px; 
   overflow: hidden;
 }
 
