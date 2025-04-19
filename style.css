@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
-.top {
-  color: rgb(236, 157, 38);
-  font-family: "PP Neue Montreal", sans-serif;
+.title1 {
+  color: rgb(114,137,218);
+  font-family: "Boldonse", system-ui;
   text-align: center;
+  text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.5);
 }
+
 
 .navbar ul {
   list-style-type: none;
@@ -20,7 +22,7 @@
 }
 
 .navbar activebar {
-  color: rgb(114,137,218)
+  color: rgb(114,137,218);
 }
 
 .navbar inactivebar{
@@ -52,12 +54,14 @@
   width: 25%;
   margin-right: 5%;
   border-radius: 5%;
+  border: 3px solid rgb(114,137,218);
 }
 
 .imageright {
   width: 25%;
   margin-left: 5%;
   border-radius: 5%;
+  border: 3px solid rgb(114,137,218);
 }
 
 .paragraph {
@@ -68,15 +72,6 @@
   line-height: 175%;
   text-align: center;
 }
-
-.g {
-  color:rgb(0,86,67)
-}
-
-.y {
-  color:rgb(255, 200, 46);
-}
-
 
 .image-row {
   display: flex;
@@ -98,4 +93,8 @@
   height: 300px;
   object-fit: cover;
   border-radius: 0;
+}
+
+.ocr-text {
+  font-family: 'Share Tech Mono', monospace;
 }
