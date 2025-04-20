@@ -5,7 +5,7 @@
 }
 
 .titleindex {
-  color: rgb(114,137,218);
+  color: rgb(236, 113, 113);
   font-family: "Boldonse", system-ui;
   text-align: center;
   text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.5);
@@ -23,7 +23,7 @@
   text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.5);
 }
 .titlecontact {
-  color: rgb(114,137,218);
+  color: rgb(234, 137, 213);
   font-family: "Boldonse", system-ui;
   text-align: center;
   text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.5);
@@ -39,7 +39,7 @@
 }
 
 .navbar activebarindex {
-  color: rgb(114,137,218);
+  color: rgb(236, 113, 113);
 }
 .navbar activebarabout {
   color: rgb(114,137,218);
@@ -48,7 +48,7 @@
   color: rgb(86, 223, 111);
 }
 .navbar activebarcontact {
-  color: rgb(216, 95, 95);
+  color: rgb(234, 137, 213);
 }
 .navbar inactivebar{
   color:grey;
@@ -170,22 +170,35 @@
   color: rgb(0, 0, 0);
   font-size: 5em;
   font-family: "Boldonse", system-ui;
-  text-shadow: 1px 1px 50px rgb(255, 255, 255);
-  -webkit-text-stroke: 1px rgb(114,137,218); 
+  text-shadow: 1px 1px 50px rgb(0, 0, 0);
+  -webkit-text-stroke: 3px rgb(86, 223, 111); 
 }
 
 
 .overlay-textPG {
   position: absolute;
   left: 50%;
-  top: 775px;
+  top: 765px;
   transform: translate(-50%, -50%);
   color: rgb(0, 0, 0);
-  font-size: 3em;
+  font-size: 4em;
   font-family: "Boldonse", system-ui;
-  text-shadow: 1px 1px 50px rgb(255, 255, 255);
+  text-shadow: 1px 1px 50px rgb(0, 0, 0);
   text-align: center;
-  -webkit-text-stroke: 1px rgb(114,137,218); 
+  -webkit-text-stroke: 3px rgb(86, 223, 111); 
+}
+
+.overlay-textMount {
+  position: absolute;
+  left: 50%;
+  top: 1250px;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 4em;
+  font-family: "Boldonse", system-ui;
+  text-shadow: 1px 1px 50px rgb(0, 0, 0);
+  text-align: center;
+  -webkit-text-stroke: 3px rgb(86, 223, 111); 
 }
 
 .image-box {
