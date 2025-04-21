@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 80px;
+}
+
 .titleindex {
   color: rgb(236, 113, 113);
   font-family: "Boldonse", system-ui;
@@ -38,6 +42,17 @@
   gap: 2%;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(30, 30, 30); 
+  z-index: 9999;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+}
+
 .navbar activebarindex {
   color: rgb(236, 113, 113);
 }
@@ -58,11 +73,21 @@
   color: white;
   text-decoration: none;
   text-align: center;
-  margin-top: 10px;
-  padding: 10px 15px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;    
+  justify-content: center; 
+  height: 100%;           
   border-radius: 15px;
-  transition: background-color 0.5s ease;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+
+.navbar a:hover {
+  background-color: rgb(114, 137, 218);
+  color: black;
 }
 
 .navbar a:hover {
@@ -214,3 +239,5 @@
   text-align: center;
   margin: 40px auto;
 }
+
+
