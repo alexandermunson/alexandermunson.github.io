@@ -1,74 +1,105 @@
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Alexander Munson</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Alexander Munson</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body style="background-color:rgb(50, 50, 50)">
+<body style="background-color: rgb(50, 50, 50);">
 
-    <h1 class="top">Alexander Munson</h1> 
+  <!-- Title -->
+  <h1 class="text-center text-warning my-4" style="font-family: FreeMono, monospace;">Alexander Munson</h1>
 
-    <nav class="navbar">
-        <ul>
-            <a href="index.html"><inactivebar>Home</inactivebar></a>
-            <a href="about.html"><activebar>About</activebar></a>
-            <a href="projects.html"><inactivebar>Projects</inactivebar></a>
-            <a href="contact.html"><inactivebar>Contact</inactivebar></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand justify-content-center mb-5">
+    <ul class="navbar-nav gap-3">
+      <li class="nav-item">
+        <a class="nav-link text-secondary" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-secondary" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-secondary" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
-        </ul>
-    </nav>
+  <!-- Content Sections -->
+  <div class="container">
 
-    
-
-    <div class="content">
-        <img class="imageleft" src="Images/trumpet on fence.jpg">
-        <p class="paragraph">
-            Hello, and welcome to my website! My name is Alexander Munson, a freshman studying Mechanical Engineering at North Dakota State University. 
-            I would describe myself as a high-achieving student with a determination to learn and succeed. On top of mechanical engineering, 
-            I am also pursuing a minor in robotics and computer science.
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="Images/trumpet on fence.jpg" class="img-fluid rounded" style="width: 100%;">
+      </div>
+      <div class="col-md-8 text-center text-light">
+        <p class="fs-5" style="font-family: Georgia, 'Times New Roman', Times, serif; line-height: 1.75;">
+          Hello, and welcome to my website! My name is Alexander Munson, a freshman studying Mechanical Engineering at North Dakota State University. I would describe myself as a high-achieving student with a determination to learn and succeed. On top of mechanical engineering, I am also pursuing a minor in robotics and computer science.
         </p>
+      </div>
     </div>
 
-    <div class="content">
-        
-        <p class="paragraph">
-            I grew up in Bismarck, North Dakota. Early on in my life I was exposed to alot of STEM through my Dad, and I think that fostered my aprecieation and love for it now.
-            Growing up in Bismarck there wasn't really too much to do other than school, which definitely set me on the right path.
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-4 text-center">
+        <img src="Images/bismarck.png" class="img-fluid rounded" style="width: 100%;">
+      </div>
+      <div class="col-md-8 text-center text-light">
+        <p class="fs-5" style="font-family: Georgia, 'Times New Roman', Times, serif; line-height: 1.75;">
+          I grew up in Bismarck, North Dakota. Early on in my life I was exposed to a lot of STEM through my Dad, and I think that fostered my appreciation and love for it now. Growing up in Bismarck there wasn't really too much to do other than school, which definitely set me on the right path.
         </p>
-        <img class="imageright" src="Images/bismarck.png">
-
-
-    </div>
-   
-    <div class="content">
-        <img class="imageleft" src="Images/ndsu.png">
-        <p class="paragraph">
-            Now, I've found my way to NDSU. So far my time here has been tons of fun and super busy.
-            Im a member of the bison robotics club under combat robotics, as well as the climbing club.
-        </p>
+      </div>
     </div>
 
-    <div class="content">
-        
-        <p class="paragraph">
-            A little more about me, I play the trumpet, a little bit of piano, and I love playing pool, longboarding, making cool stuff, and most of learning about whatever I can get my hands on! 
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="Images/ndsu.png" class="img-fluid rounded" style="width: 100%;">
+      </div>
+      <div class="col-md-8 text-center text-light">
+        <p class="fs-5" style="font-family: Georgia, 'Times New Roman', Times, serif; line-height: 1.75;">
+          Now, I've found my way to NDSU. So far my time here has been tons of fun and super busy. I'm a member of the Bison Robotics club under combat robotics, as well as the climbing club.
         </p>
-        <img class="imageright" src="Images/longboard.jpg">
-
-
+      </div>
     </div>
+
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-4 text-center">
+        <img src="Images/longboard.jpg" class="img-fluid rounded" style="width: 100%;">
+      </div>
+      <div class="col-md-8 text-center text-light">
+        <p class="fs-5" style="font-family: Georgia, 'Times New Roman', Times, serif; line-height: 1.75;">
+          A little more about me, I play the trumpet, a little bit of piano, and I love playing pool, longboarding, making cool stuff, and learning about whatever I can get my hands on!
+        </p>
+      </div>
+    </div>
+
+    <!-- Image Gallery Row -->
+    <div class="row g-0">
+      <div class="col">
+        <img src="Images/pool.JPG" class="img-fluid" style="height: 300px; object-fit: cover; width: 100%;">
+      </div>
+      <div class="col">
+        <img src="Images/trumpet.jpg" class="img-fluid" style="height: 300px; object-fit: cover; width: 100%;">
+      </div>
+      <div class="col">
+        <img src="Images/gradtrumpet.JPG" class="img-fluid" style="height: 300px; object-fit: cover; width: 100%;">
+      </div>
+      <div class="col">
+        <img src="Images/fc.jpg" class="img-fluid" style="height: 300px; object-fit: cover; width: 100%;">
+      </div>
+      <div class="col">
+        <img src="Images/tree.JPG" class="img-fluid" style="height: 300px; object-fit: cover; width: 100%;">
+      </div>
+      <div class="col">
+        <img src="Images/cowbothat.JPG" class="img-fluid" style="height: 300px; object-fit: cover; width: 100%;">
+      </div>
+    </div>
+
+  </div>
+
 </body>
-
-<div class="image-row">
-    <img class="gimg" src="Images/pool.JPG">
-    <img class="gimg" src="Images/trumpet.jpg">
-    <img class="gimg" src="Images/gradtrumpet.JPG">
-    <img class="gimg" src="Images/fc.jpg">
-    <img class="gimg" src="Images/tree.JPG">
-    <img class="gimg" src="Images/cowbothat.JPG">
-</div>
-
 </html>

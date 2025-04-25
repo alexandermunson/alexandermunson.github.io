@@ -1,40 +1,44 @@
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Alexander Munson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body style="background-color:rgb(50, 50, 50)">
+<body style="background-color:rgb(50, 50, 50);">
 
-    <h1 class="top">Alexander Munson</h1> 
+    <!-- Top Title -->
+    <h1 class="text-center text-warning my-4" style="font-family: FreeMono, monospace;">
+        Alexander Munson
+    </h1>
 
-    <nav class="navbar">
-        <ul>
-            <a href="index.html"><inactivebar>Home</inactivebar></a>
-            <a href="about.html"><inactivebar>About</inactivebar></a>
-            <a href="projects.html"><activebar>Projects</activebar></a>
-            <a href="contact.html"><inactivebar>Contact</inactivebar></a>
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand justify-content-center mb-5">
+        <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link text-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link text-secondary">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="projects.html" class="nav-link text-primary fw-bold">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link text-secondary">Contact</a>
+            </li>
         </ul>
     </nav>
 
-<div>
-    <h1 class="top">    
-    Cowbot
-    </h1>
-</div>
+    <!-- Project Titles -->
+    <div class="container text-center text-light">
+        <h1 class="mb-5">Cowbot</h1>
+        <h1 class="mb-5">This Website</h1>
+        <h1 class="mb-5">Pulse Jet Engine in a Jam Jar</h1>
+    </div>
 
-<div>
-    <h1 class="top">
-    This Website
-    </h1>
-</div>
-
-<div>
-    <h1 class="top">
-    Pulse Jet Engine in a Jam Jar
-    </h1>
-</div>
+</body>
+</html>
