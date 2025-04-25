@@ -1,33 +1,61 @@
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Alexander Munson</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Alexander Munson</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .nav-link.active {
+      background-color: rgb(240, 91, 91);
+      color: white;
+    }
+    .nav-link {
+      background-color: rgba(255,255,255,0.05);
+      padding: 10px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .nav-link:hover {
+      background-color: rgba(255,255,255,0.2);
+      color: white;
+    }
+  </style>
 </head>
 
-<body style="background-color:rgb(50, 50, 50);">
+<body style="background-color:rgb(50,50,50);">
 
-    <h1 class="text-center text-warning my-4" style="font-family: FreeMono, monospace;">Alexander Munson</h1>
+<nav class="navbar navbar-dark">
+  <div class="container-fluid d-flex flex-column">
+    <div class="text-center fw-bold mb-3" style="font-family: FreeMono, monospace; font-size: 2rem; color: rgb(240, 91, 91);">
+        Alexander Munson
+      </div>
+      
 
-    <nav class="navbar navbar-expand justify-content-center mb-5">
-        <ul class="navbar-nav gap-3">
+ 
+    <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center gap-4">
 
-            <li class="nav-item">
-                <a href="index.html" class="nav-link text-primary fw-bold">Home</a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link active px-3" href="index.html">Home</a>
+      </li>
 
-            <li class="nav-item">
-                <a href="about.html" class="nav-link text-secondary">About</a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link px-3" href="about.html">About</a>
+      </li>
 
-            <li class="nav-item">
-                <a href="projects.html" class="nav-link text-secondary">Projects</a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link px-3" href="projects.html">Projects</a>
+      </li>
 
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link text-secondary">Contact</a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link px-3" href="contact.html">Contact</a>
+      </li>
 
-        </ul>
-    </nav>
+    </ul>
+
+  </div>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
