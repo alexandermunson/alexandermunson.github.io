@@ -1,59 +1,66 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Alexander Munson</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
+    <meta charset="UTF-8">
+    <title>Alexander Munson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <style>
     .nav-link.active {
-      background-color: rgb(240, 91, 91);
+      background-color: rgb(240,90,90);
       color: white;
     }
     .nav-link {
-      background-color: rgba(255,255,255,0.05);
+      background-color: rgb(68,68,68);
       padding: 10px 16px;
       border-radius: 8px;
       transition: background-color 0.3s, color 0.3s;
+      box-shadow: 0px 0px 15px rgb(0,0,0);
     }
     .nav-link:hover {
-      background-color: rgba(255,255,255,0.2);
+      background-color: rgba(255,255,255);
       color: white;
     }
-  </style>
+    .title-outline {
+      color: rgb(100, 38, 38);
+      text-shadow:
+        -1px -1px 0 rgb(240,90,90),
+         1px -1px 0 rgb(240,90,90),
+        -1px  1px 0 rgb(240,90,90),
+         1px  1px 0 rgb(240,90,90);
+      font-family: Boldonse, system-ui;
+      font-size: 2em;
+    }
+    </style>
 </head>
 
 <body style="background-color:rgb(50,50,50);">
 
 <nav class="navbar navbar-dark">
-  <div class="container-fluid d-flex flex-column">
-    <div class="text-center fw-bold mb-3" style="font-family: FreeMono, monospace; font-size: 2rem; color: rgb(240, 91, 91);">
-        Alexander Munson
-      </div>
-      
+    <div class="container-fluid d-flex flex-column">
+        <div class="text-center fw-bold mb-3 title-outline">
+          Alexander Munson
+        </div>
 
- 
-    <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center gap-4">
-
-      <li class="nav-item">
-        <a class="nav-link active px-3" href="index.html">Home</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link px-3" href="about.html">About</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link px-3" href="projects.html">Projects</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link px-3" href="contact.html">Contact</a>
-      </li>
-
-    </ul>
-
-  </div>
+        <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center gap-2">
+            <li class="nav-item">
+                <a class="nav-link active px-3" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-3" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-3" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-3" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
