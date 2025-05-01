@@ -1,3 +1,4 @@
+/* Navigation styling */
 .nav-link {
     background-color: rgb(68,68,68);
     padding: 10px 20px;
@@ -30,6 +31,7 @@
     font-family: "Homemade Apple", cursive;
 }
 
+/* Title styles */
 .title-outlineindex {
   color: rgb(100, 38, 38);
   text-shadow:
@@ -81,7 +83,7 @@
 @media (min-width: 768px) {
     .nav-link {
         min-width: 100px;
-        }
+    }
 }
 
 .nav-link:hover {
@@ -89,6 +91,7 @@
   color: white;
 }
 
+/* Image styling */
 .gallery-img {
     height: 150px;
     object-fit: cover;
@@ -101,7 +104,7 @@
     }
 }
 
-
+/* Scrollbar */
 #navbar {
     transition: top 1s ease-in-out;
 }
@@ -112,9 +115,9 @@
 
 ::-webkit-scrollbar {
     width: 100px;
-  }
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: transparent; 
 }
 
@@ -132,3 +135,40 @@ html {
     scrollbar-color: rgba(255,255,255,0.2) transparent;
     overflow-y: scroll;
 }
+
+/* Layered title */
+.layered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    font-family: 'Boldonse', serif;
+    color: rgb(6, 43, 12);
+    letter-spacing: 3px;
+    text-align: center;
+    pointer-events: none;
+    z-index: 10;
+    text-shadow:
+        0.5vw 0.5vw 0 rgb(20, 83, 30),
+       -0.5vw -0.5vw 0 rgb(70, 165, 85);
+}
+
+.layered-titlepg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    font-family: 'Boldonse', serif;
+    color: rgb(6, 43, 12);
+    letter-spacing: 3px;
+    text-align: center;
+    pointer-events: none;
+    z-index: 10;
+    text-shadow:
+        0.5vw 0.5vw 0 rgb(20, 83, 30),
+       -0.5vw -0.5vw 0 rgb(70, 165, 85);
+    line-height: 50px;
+}
+
