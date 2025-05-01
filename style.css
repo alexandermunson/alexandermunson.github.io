@@ -56,7 +56,7 @@
     font-family: Boldonse, system-ui;
     font-size: 2em;
     letter-spacing:4px;
-  }
+}
 
 .title-outlineprojects {
     color: rgb(20, 83, 30);
@@ -99,11 +99,9 @@
     width: 100%;
 }
 
-
-
 @media (min-width: 768px) {
     .gallery-img {
-    height: 300px;
+        height: 300px;
     }
 }
 
@@ -138,44 +136,54 @@ html {
     overflow-y: scroll;
 }
 
+/* ✅ FIXED: Make gallery container auto-size and center titles */
+.position-relative {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.layered-title {
-    position: absolute;  
-    top: 50%;        
-    left: 50%;     
-    transform: translate(-50%, -50%); 
-    font-size: 6vw;
-    font-family: 'Boldonse', serif;
-    color: rgb(6, 43, 12);
-    letter-spacing: 3px;
-    text-align: center;
+.row.g-0 {
+    position: relative;
+    width: 100%;
+}
+
+.layered-title,
+.layered-titlepg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     pointer-events: none;
     z-index: 10;
+    text-align: center;
+    font-family: 'Boldonse', serif;
+    letter-spacing: 3px;
+}
+
+.layered-title span {
+    font-size: 6vw;
+    color: rgb(6, 43, 12);
     text-shadow:
         0.5vw 0.5vw 0 rgba(20, 83, 30,0.7),
        -0.5vw -0.5vw 0 rgba(70, 165, 85,0.7);
 }
 
-
-.layered-titlepg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.layered-titlepg span {
     font-size: 4vw;
-    font-family: 'Boldonse', serif;
     color: rgb(6, 43, 12);
-    letter-spacing: 3px;
-    text-align: center;
-    pointer-events: none;
-    z-index: 10;
     text-shadow:
         0.5vw 0.5vw 0 rgba(20, 83, 30,0.9),
        -0.5vw -0.5vw 0 rgb(70, 165, 85,0.9);
     line-height: 50px;
 }
 
-.projectparagraph{
-    color:bisque;
+.projectparagraph {
+    color: bisque;
     text-align: center;
 }
