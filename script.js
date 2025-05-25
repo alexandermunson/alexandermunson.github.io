@@ -1,23 +1,43 @@
-let lastScrollTop = 0;
-const navbar = document.getElementById('navbar');
-let isAtTop = true;
+// Scrollspy
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
 
-window.addEventListener('scroll', function () {
-  const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-  if (scrollTop > lastScrollTop && scrollTop > 50) {
-    navbar.classList.add('hidden');
-    isAtTop = false;
-  } else {
-    navbar.classList.remove('hidden');
-    isAtTop = true;
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").substring(1) === entry.target.id) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  },
+  {
+    rootMargin: "-30% 0px -60% 0px",
+    threshold: 0.1,
   }
+);
 
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+sections.forEach((section) => {
+  observer.observe(section);
 });
 
-document.addEventListener('mousemove', function (e) {
-  if (e.clientY < 10 && !isAtTop) {
-    navbar.classList.remove('hidden');
-  }
+// Sidebar toggle
+const toggleBtn = document.getElementById("sidebarToggle");
+const sidebar = document.querySelector(".sidebar");
+
+toggleBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("show");
 });
+
+// Optional: Auto-close sidebar when a link is clicked (mobile UX)
+document.querySelectorAll(".sidebar a").forEach(link =>
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      sidebar.classList.remove("show");
+    }
+  })
+);
