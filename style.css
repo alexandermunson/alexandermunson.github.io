@@ -353,3 +353,118 @@ html {
   transition: width 0.1s ease-out, opacity 0.5s ease, background-color 0.3s ease;
   pointer-events: none;
 }
+
+.skills-badge-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+}
+
+.skill-badge {
+  background-color: rgb(255, 197, 47); /* badge background */
+  color: rgb(60, 50, 20);              /* text color */
+  font-family: "Cascadia Code", sans-serif;
+  padding: 0.4rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  user-select: none;
+}
+
+.skill-badge:hover {
+  background-color: rgb(183, 61, 24);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Base badge styling is already set */
+
+.badge-advanced {
+  background-color: rgb(183, 61, 24);
+  color: white;
+}
+.badge-advanced:hover {
+  background-color: rgb(150, 40, 10);
+}
+
+.badge-intermediate {
+  background-color: rgb(255, 154, 47);
+  color: rgb(60, 50, 20);
+}
+.badge-intermediate:hover {
+  background-color: rgb(255, 123, 20);
+  color: white;
+}
+
+.badge-beginner {
+  background-color: rgb(255, 197, 47);
+  color: rgb(60, 50, 20);
+}
+.badge-beginner:hover {
+  background-color: rgb(240, 165, 20);
+  color: white;
+}
+
+.skills-heading {
+  font-family: "Cascadia Code", sans-serif;
+  color: rgb(97, 23, 0); /* matches your .ptext3 */
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.skills-badge-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ✅ Centers badges horizontally */
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+}
+
+.skills-category {
+  margin-bottom: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nameBanner {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 2001;
+  font-family: "Exile", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: rgb(183, 61, 24);
+
+  background: rgba(255, 237, 43, 0.2); 
+  backdrop-filter: blur(6px);          
+  -webkit-backdrop-filter: blur(6px);  
+  
+  padding: 0.5rem 1rem;
+  border: 2px solid rgb(183, 61, 24);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+#nameBanner:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3); 
+}
+
+
+#nameBanner:hover {
+  transform: scale(1.05);
+  background: rgba(255, 197, 47, 0.4);
+}
+
+@media (max-width: 768px) {
+  #nameBanner {
+    display: none;
+  }
+}
