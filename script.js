@@ -16,8 +16,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    rootMargin: "-30% 0px -60% 0px",
-    threshold: 0.1,
+    threshold: 0.6, // Section must be 60% visible to activate
   }
 );
 
@@ -27,17 +26,23 @@ sections.forEach((section) => {
 
 // Sidebar toggle
 const toggleBtn = document.getElementById("sidebarToggle");
-const sidebar = document.querySelector(".sidebar");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
 
-toggleBtn.addEventListener("click", () => {
+function toggleSidebar() {
   sidebar.classList.toggle("show");
-});
+  overlay.classList.toggle("show");
+  toggleBtn.classList.toggle("open");
+}
 
-// Optional: Auto-close sidebar when a link is clicked (mobile UX)
+toggleBtn.addEventListener("click", toggleSidebar);
+overlay.addEventListener("click", toggleSidebar);
+
+// Auto-close sidebar after link click on mobile
 document.querySelectorAll(".sidebar a").forEach(link =>
   link.addEventListener("click", () => {
     if (window.innerWidth <= 768) {
-      sidebar.classList.remove("show");
+      toggleSidebar();
     }
   })
 );

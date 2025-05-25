@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alexander Munson</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet" />
   </head>
   <body style="background-color:rgb(239,239,226)">
 
-    <!-- Toggle button for mobile -->
-    <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+    <!-- Toggle button -->
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+      <span class="bar top"></span>
+      <span class="bar middle"></span>
+      <span class="bar bottom"></span>
+    </button>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
       <ul>
         <li><a href="#about" class="nav-link active">About</a></li>
         <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
@@ -31,11 +38,11 @@
         <div class="container mt-4">
           <div class="row align-items-center">
             <div class="col-md-4">
-              <img class="img-fluid" src="Images/tree.JPG" style="border-radius: 20px; border: 5px solid rgb(255,197,47);" />
+              <img class="img-fluid" src="Images/trumpet on fence.jpg" style="border-radius: 20px; border: 5px solid rgb(208,180,244);" />
             </div>
             <div class="col-md-8">
-              <p class="ptext2">Hello there!</p>
-              <p class="ptext">
+              <p class="ptext2L">Hello there!</p>
+              <p class="ptextL">
                 My name is Alexander Munson, a sophomore studying Mechanical Engineering at 
                 North Dakota State University. I would describe myself as a high-achieving student with a determination to learn 
                 and succeed. On top of mechanical engineering, I am also pursuing a minor in robotics and computer science.
@@ -43,31 +50,51 @@
             </div>
           </div>
         </div>
+
+        <div class="container mt-4">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <p class="ptext2R">A bit more about me!</p>
+              <p class="ptextR">
+                I grew up in Bismarck, North Dakota. Early on, I started getting into STEM, and that definitely sparked 
+                somthing that has kept on till now. There wasnt a ton to do in Bismarck besides school, so I ended up putting 
+                a lot of energy into learning, and it really set the tone for where I'm headed now. 
+                Now, I've found my way to NDSU. So far my time here has been tons of fun and super busy. Im a member of the
+                bison robotics club under combat robotics, as well as the climbing club. 
+                I play the trumpet, a little bit of piano, I love playing pool, 
+                longboarding, making cool stuff, and learning about whatever I can get my hands on! 
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid" src="Images/tree.JPG" style="border-radius: 20px; border: 5px solid rgb(208,180,244);" />
+            </div>
+          </div>
+        </div>
+
       </section>
 
       <section id="portfolio">
         <div class="container mt-5">
-          <h2 class="ptext2">Portfolio</h2>
-          <p class="ptext">My recent projects and work go here...</p>
+          <h2 class="ptext2L">Portfolio</h2>
+          <p class="ptextL">My recent projects and work go here...</p>
         </div>
       </section>
 
       <section id="resume">
         <div class="container mt-5">
-          <h2 class="ptext2">Resume</h2>
-          <p class="ptext">My experience and education details go here...</p>
+          <h2 class="ptext2L">Resume</h2>
+          <p class="ptextL">My experience and education details go here...</p>
         </div>
       </section>
 
       <section id="contact">
         <div class="container mt-5">
-          <h2 class="ptext2">Contact</h2>
-          <p class="ptext">Ways to get in touch with me...</p>
+          <h2 class="ptext2L">Contact</h2>
+          <p class="ptextL">Ways to get in touch with me...</p>
         </div>
       </section>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>

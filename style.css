@@ -6,9 +6,9 @@
 }
 
 body {
-  display: flex;
   font-family: "Cascadia Code", sans-serif;
-  background-color: rgb(239,239,226);
+  background-color: rgb(111, 19, 172);
+  overflow-x: hidden;
 }
 
 /* Sidebar */
@@ -16,15 +16,22 @@ body {
   width: 200px;
   height: 100vh;
   position: fixed;
-  background-color: #222;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 197, 47);
   padding-top: 2rem;
   overflow-y: auto;
-  z-index: 999;
+  z-index: 1001;
+  transition: transform 0.3s ease;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .sidebar ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .sidebar li {
@@ -32,21 +39,55 @@ body {
 }
 
 .sidebar a {
-  color: white;
+  color: rgb(60, 60, 60);
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   display: block;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 500;
+  border-left: 4px solid transparent;
+}
+
+.sidebar a::after {
+  content: "";
+  position: absolute;
+  left: 1.25rem;
+  bottom: 10px;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(61, 61, 61);
+  transition: width 0.3s ease;
+}
+
+.sidebar a:hover::after {
+  width: 60%;
 }
 
 .sidebar a:hover {
-  background-color: #444;
+  background-color: rgb(183, 61, 24);
+  color: rgb(227, 227, 227);
 }
 
 .sidebar a.active {
-  background-color: rgb(208,180,244);
+  background-color: rgb(255, 97, 47);
   color: black;
   font-weight: bold;
+  border-left: 4px solid black;
+}
+
+
+/* Overlay for mobile */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
 }
 
 /* Hamburger toggle button */
@@ -54,15 +95,34 @@ body {
   position: fixed;
   top: 1rem;
   left: 1rem;
-  z-index: 1000;
-  font-size: 2rem;
-  background: rgb(208,180,244);
-  color: white;
+  z-index: 1002;
+  background: none;
   border: none;
-  border-radius: 5px;
-  padding: 0.4rem 0.8rem;
   cursor: pointer;
   display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background: rgb(56, 56, 56);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Hamburger animation */
+.sidebar-toggle.open .top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.sidebar-toggle.open .middle {
+  opacity: 0;
+}
+
+.sidebar-toggle.open .bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Main content */
@@ -70,6 +130,7 @@ body {
   margin-left: 200px;
   padding: 2rem;
   width: calc(100% - 200px);
+  transition: margin-left 0.3s ease;
 }
 
 section {
@@ -79,37 +140,54 @@ section {
 }
 
 /* Typography */
-.ptext {
+.ptextR {
+  font-family: "Cascadia Code", sans-serif;
+  color: rgb(60, 50, 20);
+  padding-right: 20px;
+  text-align: right;
+}
+
+.ptext2R {
+  font-family: "Cascadia Code", sans-serif;
+  color: rgb(60, 50, 20);
+  padding-right: 20px;
+  text-align: right;
+  font-size: xx-large;
+  font-weight: bold;
+  padding-top:10px
+}
+
+.ptextL {
   font-family: "Cascadia Code", sans-serif;
   color: rgb(60, 50, 20);
   padding-left: 20px;
 }
 
-.ptext2 {
+.ptext2L {
   font-family: "Cascadia Code", sans-serif;
   color: rgb(60, 50, 20);
   padding-left: 20px;
   font-size: xx-large;
   font-weight: bold;
+  padding-top:10px
 }
 
-/* Smooth scroll */
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Responsive sidebar toggle */
+/* Mobile adjustments */
 @media (max-width: 768px) {
   .sidebar {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 200px;
+    transform: translateX(-100%);
   }
 
   .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .overlay.show {
     display: block;
   }
 
@@ -119,6 +197,6 @@ html {
   }
 
   .sidebar-toggle {
-    display: block;
+    display: flex;
   }
 }
