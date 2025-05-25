@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.cascadiacode {
+    font-family: "Cascadia Code", sans-serif;
+}
+
 body {
   font-family: "Cascadia Code", sans-serif;
   background-color: rgb(111, 19, 172);
@@ -199,4 +203,88 @@ html {
   .sidebar-toggle {
     display: flex;
   }
+}
+
+.image-banner {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(255, 154, 47);
+  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.image-banner img {
+  max-height: 200px;
+  width: auto;
+  border-radius: 8px;
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.project-card {
+  background-color: rgb(255, 154, 47);
+  border-radius: 12px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+
+.project-card h3 {
+  margin: 0.5rem 0;
+  color: rgb(60, 50, 20);
+}
+
+.project-card p {
+  color: rgb(60, 50, 20);
+  font-size: 0.95rem;
+}
+
+.project-card .buttons a {
+  display: inline-block;
+  margin: 0.5rem 0.25rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  background-color: rgb(183, 61, 24);
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.project-card .buttons a:hover {
+  background-color: black;
+}
+
+/* Apply Cascadia Code to all project card content */
+.projects-grid,
+.projects-grid h3,
+.projects-grid p,
+.projects-grid a {
+  font-family: "Cascadia Code", sans-serif;
 }

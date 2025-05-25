@@ -1,26 +1,32 @@
-// Scrollspy
+// Scrollspy with most visible section detection
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
+
+let visibleSections = {};
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href").substring(1) === entry.target.id) {
-            link.classList.add("active");
-          }
-        });
-      }
+      visibleSections[entry.target.id] = entry.intersectionRatio;
+
+      const mostVisible = Object.entries(visibleSections)
+        .sort((a, b) => b[1] - a[1])[0][0];
+
+      navLinks.forEach((link) => {
+        link.classList.toggle(
+          "active",
+          link.getAttribute("href").substring(1) === mostVisible
+        );
+      });
     });
   },
   {
-    threshold: 0.6, // Section must be 60% visible to activate
+    threshold: Array.from({ length: 101 }, (_, i) => i / 100), // 0 to 1 in 0.01 steps
   }
 );
 
 sections.forEach((section) => {
+  visibleSections[section.id] = 0;
   observer.observe(section);
 });
 
