@@ -55,7 +55,7 @@ document.querySelectorAll(".sidebar a").forEach(link =>
 
 
 let i = 0;
-const text = "Hello there!";
+const text = "Hello There! Welcome to my Website";
 function type() {
   if (i < text.length) {
     document.getElementById("intro").innerHTML += text.charAt(i);
