@@ -52,3 +52,15 @@ document.querySelectorAll(".sidebar a").forEach(link =>
     }
   })
 );
+
+
+let i = 0;
+const text = "Hello there!";
+function type() {
+  if (i < text.length) {
+    document.getElementById("intro").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 150);
+  }
+}
+window.onload = type;
