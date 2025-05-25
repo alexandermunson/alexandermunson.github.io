@@ -9,8 +9,16 @@
 }
 
 body {
+  scrollbar-width: none;        
+  -ms-overflow-style: none;     
+}
+
+body::-webkit-scrollbar {
+  display: none;       
+}
+
+body {
   font-family: "Cascadia Code", sans-serif;
-  background-color: rgb(111, 19, 172);
   overflow-x: hidden;
 }
 
@@ -107,7 +115,7 @@ body {
 .bar {
   width: 30px;
   height: 3px;
-  background: rgb(56, 56, 56);
+  background: rgb(24, 24, 24);
   transition: all 0.3s ease;
   border-radius: 2px;
 }
@@ -133,36 +141,45 @@ body {
 
 section {
   padding: 4rem 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 3px solid rgb(255, 197, 47);
   min-height: 50vh;
 }
 
 .ptextR {
   font-family: "Cascadia Code", sans-serif;
-  color: rgb(60, 50, 20);
+  color: rgb(70, 70, 70);
   padding-right: 20px;
   text-align: right;
 }
 
 .ptext2R {
   font-family: "Cascadia Code", sans-serif;
-  color: rgb(60, 50, 20);
+  color: rgb(183, 61, 24);
   padding-right: 20px;
   text-align: right;
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bold;
   padding-top:10px
 }
 
 .ptextL {
   font-family: "Cascadia Code", sans-serif;
-  color: rgb(60, 50, 20);
+  color: rgb(70, 70, 70);
   padding-left: 20px;
 }
 
 .ptext2L {
   font-family: "Cascadia Code", sans-serif;
-  color: rgb(60, 50, 20);
+  color: rgb(183, 61, 24);
+  padding-left: 20px;
+  font-size: x-large;
+  font-weight: bold;
+  padding-top:10px
+}
+
+.ptext3{
+  font-family: "Cascadia Code", sans-serif;
+  color: rgb(97, 23, 0);
   padding-left: 20px;
   font-size: xx-large;
   font-weight: bold;
@@ -246,11 +263,11 @@ html {
 
 .project-card h3 {
   margin: 0.5rem 0;
-  color: rgb(60, 50, 20);
+  color: rgb(183, 61, 24);
 }
 
 .project-card p {
-  color: rgb(60, 50, 20);
+  color: rgb(70,70,70);
   font-size: 0.95rem;
 }
 
@@ -286,13 +303,13 @@ html {
 .contact-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: rgb(60, 50, 20);
+  color: rgb(97, 23, 0);
 }
 
 .contact-section p {
   font-size: 1rem;
   margin-bottom: 2rem;
-  color: rgb(60, 50, 20);
+  color: rgb(70,70,70);
 }
 
 .contact-links {
@@ -320,4 +337,19 @@ html {
 
 .contact-icon:hover {
   color: rgb(183, 61, 24);
+}
+
+#scrollProgressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  background-color: rgb(183, 61, 24); /* default base color */
+  width: 0%;
+  z-index: 2000;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  opacity: 0;
+  transition: width 0.1s ease-out, opacity 0.5s ease, background-color 0.3s ease;
+  pointer-events: none;
 }
