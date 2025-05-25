@@ -209,7 +209,6 @@ html {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   padding: 1rem;
@@ -220,11 +219,10 @@ html {
 }
 
 .image-banner img {
-  max-height: 200px;
-  width: auto;
+  height:12vw;
+  width:auto;
   border-radius: 8px;
 }
-
 
 .projects-grid {
   display: grid;
