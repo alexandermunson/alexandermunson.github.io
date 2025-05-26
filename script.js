@@ -1,4 +1,3 @@
-// Scrollspy with most visible section detection
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -181,3 +180,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}

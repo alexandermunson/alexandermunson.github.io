@@ -344,7 +344,7 @@ html {
   top: 0;
   left: 0;
   height: 6px;
-  background-color: rgb(183, 61, 24); /* default base color */
+  background-color: rgb(183, 61, 24); 
   width: 0%;
   z-index: 2000;
   border-bottom-right-radius: 4px;
@@ -362,8 +362,8 @@ html {
 }
 
 .skill-badge {
-  background-color: rgb(255, 197, 47); /* badge background */
-  color: rgb(60, 50, 20);              /* text color */
+  background-color: rgb(255, 197, 47); 
+  color: rgb(60, 50, 20);            
   font-family: "Cascadia Code", sans-serif;
   padding: 0.4rem 0.75rem;
   border-radius: 50px;
@@ -379,7 +379,6 @@ html {
   transform: scale(1.05);
 }
 
-/* Base badge styling is already set */
 
 .badge-advanced {
   background-color: rgb(183, 61, 24);
@@ -409,7 +408,7 @@ html {
 
 .skills-heading {
   font-family: "Cascadia Code", sans-serif;
-  color: rgb(97, 23, 0); /* matches your .ptext3 */
+  color: rgb(97, 23, 0); 
   font-size: 1.75rem;
   font-weight: bold;
   text-align: center;
@@ -419,7 +418,7 @@ html {
 .skills-badge-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* ✅ Centers badges horizontally */
+  justify-content: center; 
   gap: 0.75rem;
   padding: 1rem 1.5rem;
 }
@@ -495,9 +494,9 @@ html {
 
 .popup-images {
   display: flex;
-  flex-wrap: nowrap;      /* ensures images stay in a row */
-  overflow-x: auto;        /* allows scrolling if images overflow */
-  gap: 10px;               /* space between images */
+  flex-wrap: nowrap;     
+  overflow-x: auto;        
+  gap: 10px;              
 }
 
 .popup-images img {
