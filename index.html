@@ -9,11 +9,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Exile&display=swap" rel="stylesheet">    </head>
+        <link href="https://fonts.googleapis.com/css2?family=Exile&display=swap" rel="stylesheet">    
+      </head>
     <body style="background-color:rgb(236, 227, 205)">
 
 
-    <div id="nameBanner">Alexander Munson</div>
+    <button id="nameBanner" onclick="scrollToTop()">Alexander Munson</button>
 
     <div id="scrollProgressBar"></div>
 
@@ -139,10 +140,10 @@
     <div class="project-card">
       <img src="Images/glamorshot.jpg" alt="Combat Bot">
       <h3>Cowbot</h3>
-      <p>I worked as a part of a team that designed and built a competitive combat bot, dubbed COWBOT, for NDSU to compete in UIUC's Robobrawl.</p>
+      <p>I worked as a part of a team that designed and built a competitive 30lb combat robot, dubbed COWBOT, to compete in UIUC's Robobrawl.</p>
       <div class="buttons">
-        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Cad Model</a>
-        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">More Pictures</a>
+        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">CAD Model</a>
+        <a href="#" class="more-pictures-btn" data-id="cowbot">More Pictures</a>
       </div>
     </div>
 
@@ -151,7 +152,7 @@
       <h3>Playground Design</h3>
       <p>I lead a team of 4 to design a playground that would fit in a predetermined location.</p>
       <div class="buttons">
-        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">More Pictures</a>
+        <a href="#" class="more-pictures-btn" data-id="playground">More Pictures</a>
       </div>
     </div>
 
@@ -160,7 +161,7 @@
       <h3>Dorm Surround Sound Speaker Mount</h3>
       <p>Designed and 3D printed a mount that would work with the bedframes on campus.</p>
       <div class="buttons">
-        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">More Pictures</a>
+        <a href="#" class="more-pictures-btn" data-id="speaker">More Pictures</a>
       </div>
     </div>
 
@@ -169,7 +170,7 @@
       <h3>This Website!</h3>
       <p>This was my first step into the web development world, as well as getting familiar with git and gihub.</p>
       <div class="buttons">
-        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">More Pictures</a>
+        <a href="https://https://github.com/alexandermunson/alexandermunson.github.io" target="_blank">Repository</a>
       </div>
     </div>
 
@@ -282,5 +283,12 @@
     </div>
 
     <script src="script.js"></script>
+    <div id="imagePopup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <div class="popup-images" id="popupImages"></div>
+  </div>
+</div>
+
   </body>
 </html>

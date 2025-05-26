@@ -92,3 +92,87 @@ window.addEventListener("scroll", () => {
     scrollBar.style.opacity = 0;
   }, 800);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("imagePopup");
+  const closeBtn = document.querySelector(".close-btn");
+  const morePictureButtons = document.querySelectorAll(".buttons a");
+
+  morePictureButtons.forEach(button => {
+    if (button.textContent.includes("More Pictures")) {
+      button.addEventListener("click", (e) => {
+        e.preventDefault(); // prevent default link behavior
+        popup.style.display = "flex";
+      });
+    }
+  });
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("imagePopup");
+  const popupImages = document.getElementById("popupImages");
+  const closeBtn = document.querySelector(".close-btn");
+
+  const imageData = {
+    cowbot: [
+      "Images/beingbuilt.jpg",
+      "Images/beingbuilt1.jpg",
+      "Images/beingbuilt2.jpg",
+      "Images/inthering.PNG",
+      "Images/cadbot.png"
+    ],
+    playground: [
+      "Images/Explodedframe-1.png",
+      "Images/BB001-1.png",
+      "Images/PF004-1.png",
+      "Images/PF015-1.png",
+      "Images/SN001-1.png"
+    ],
+    speaker: [
+      "Images/onshapespeaker.png",
+      "Images/speaker.jpg"
+    ]
+    // Add more as needed
+  };
+
+  document.querySelectorAll(".more-pictures-btn").forEach(button => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      const id = button.getAttribute("data-id");
+      const images = imageData[id];
+
+      // Clear previous images
+      popupImages.innerHTML = "";
+
+      // Append new images
+      images.forEach(src => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = `${id} image`;
+        popupImages.appendChild(img);
+      });
+
+      popup.style.display = "flex";
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
