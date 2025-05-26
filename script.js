@@ -78,14 +78,19 @@ window.addEventListener("scroll", () => {
   scrollBar.style.opacity = 1;
 
   // Color change based on scroll depth
-  if (scrolled < 33) {
-    scrollBar.style.backgroundColor = "rgb(183, 61, 24)"; 
-  } else if (scrolled < 66) {
-    scrollBar.style.backgroundColor = "rgb(255, 97, 47)"; 
+  if (scrolled < 17) {
+    scrollBar.style.backgroundColor = "rgb(255, 0, 0)"; 
+  } else if (scrolled < 34) {
+    scrollBar.style.backgroundColor = "rgb(255, 98, 0)"; 
+  } else if (scrolled < 51) {
+    scrollBar.style.backgroundColor = "rgb(242, 255, 0)"; 
+  } else if (scrolled < 68) {
+    scrollBar.style.backgroundColor = "rgb(0, 255, 17)"; 
+  }else if (scrolled < 85) {
+    scrollBar.style.backgroundColor = "rgb(0, 174, 255)"; 
   } else {
-    scrollBar.style.backgroundColor = "rgb(255, 154, 47)"; 
+    scrollBar.style.backgroundColor = "rgb(106, 0, 255)"; 
   }
-
   // Reset fade-out timer
   clearTimeout(scrollTimeout);
   scrollTimeout = setTimeout(() => {
