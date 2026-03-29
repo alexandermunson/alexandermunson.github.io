@@ -8,10 +8,11 @@
 
   <body class="bg-black text-white antialiased">
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center px-6">
-      <div class="max-w-5xl text-center reveal is-visible">
+    <section class="relative min-h-screen flex items-center justify-center px-6 bg-[url('/images/hero.JPG')] bg-cover bg-center">
+      <div class="absolute inset-0 bg-linear-to-b from-black/50 to-black"></div>
+      <div class="relative z-10 max-w-5xl text-center reveal is-visible">
         <p class="text-sm uppercase tracking-[0.3em] text-zinc-400 mb-6">
-          Mechanical Engineering Student • Lifelong Learner • Problem Solver
+          Student • Lifelong Learner • Problem Solver
         </p>
         <h1 class="text-5xl md:text-7xl font-semibold tracking-tight leading-tight">
           A mechanical engineering student driven to
@@ -85,7 +86,7 @@
           />
           <div>
             <h3 class="text-2xl font-medium transition duration-300 group-hover:text-red-400">JPL Summer Intern</h3>
-            <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-red-300">Jet Propulsion Laboratory | Pasadena, CA</p>
+            <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-red-300"><a href="https://www.jpl.nasa.gov" target="_blank" rel="noopener noreferrer">Jet Propulsion Laboratory</a> | Pasadena, CA</p>
           </div>
         </div>
         <p class="text-zinc-500 transition duration-300 group-hover:text-red-300">June 2026 - August 2026</p>
@@ -109,7 +110,7 @@
           />
           <div>
             <h3 class="text-2xl font-medium transition duration-300 group-hover:text-yellow-400">Research and Development Engineering Intern</h3>
-            <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-yellow-300">Marvin Composites | Fargo, ND</p>
+            <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-yellow-300"><a href="https://www.marvincomposites.com" target="_blank" rel="noopener noreferrer">Marvin Composites</a> | Fargo, ND</p>
           </div>
         </div>
         <p class="text-zinc-500 transition duration-300 group-hover:text-yellow-300">June 2025 – Present</p>
@@ -134,7 +135,7 @@
           />
           <div>
             <h3 class="text-2xl font-medium transition duration-300 group-hover:text-blue-400">Student Technology Specialist Intern</h3>
-            <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-blue-300">Bismarck Public Schools | Bismarck, ND</p>
+            <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-blue-300"><a href="https://www.bismarckschools.org" target="_blank" rel="noopener noreferrer">Bismarck Public Schools</a> | Bismarck, ND</p>
           </div>
         </div>
         <p class="text-zinc-500 transition duration-300 group-hover:text-blue-300">June 2021 - August 2024</p>
@@ -165,7 +166,7 @@
         <div class="group reveal rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-[#0a5640] hover:bg-[#0a5640]/10 hover:shadow-[0_0_30px_rgba(255,199,42,0.18)]">
           <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
             <div>
-              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-[#ffc72a]">North Dakota State University</h3>
+              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-[#ffc72a]"><a href="https://www.ndsu.edu" target="_blank" rel="noopener noreferrer">North Dakota State University</a></h3>
               <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-[#0a5640]">B.S. in Mechanical Engineering, Minors in Computer Science and Robotics</p>
             </div>
             <p class="text-zinc-500 transition duration-300 group-hover:text-[#ffc72a]">Expected Graduation: 2028</p>
@@ -177,49 +178,65 @@
         </div>
         <div class="reveal">
           <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mt-8 mb-12">
-            // relevant coursework & skills
+            // relevant coursework
           </h2>
           <div class="group reveal rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out">
             <div class="space-y-8">
-              <div>
-                <h3 class="text-lg font-medium text-zinc-200 mb-4">Classes</h3>  
-                <div class="flex flex-wrap gap-3">
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Statics</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Dynamics</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Mechanics of Materials</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Thermodynamics</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Fluid Mechanics</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Calculus I</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Calculus II</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Multivariate Calculus</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Ordinary Differential Equations</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Physics I</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Physics II</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">General Chemistry I</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">General Chemistry II</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Computer Aided Design</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Linear Algebra</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">MATLAB</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Material Science</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">Introduction to Robotics</span>
+              <details class="group/passed">
+                <summary class="flex items-center justify-between cursor-pointer list-none mb-4">
+                  <h3 class="text-lg font-medium text-zinc-200">Passed Classes</h3>
+                  <span class="text-zinc-500 text-sm transition duration-300 group-open/passed:rotate-180">▼</span>
+                </summary>
+                <div class="flex flex-wrap gap-3 justify-center">
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 212 - Fundamentals of Visual Communication for Engineers</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 213 - Modeling of Engineering Systems</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 221 - Engineering Mechanics I</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 222 - Engineering Mechanics II</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 223 - Mechanics of Materials</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 331 - Material Science</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 351 - Thermodynamics</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 352 - Fluid Mechanics</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/math/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">MATH 129 - Basic Linear Algebra</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/math/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">MATH 165 - Calculus I</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/math/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">MATH 166 - Calculus II</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/math/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">MATH 259 - Multivariate Calculus</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/math/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">MATH 266 - Introduction to Differential Equations</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/phys/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">PHYS 251 - Physics I</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/phys/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">PHYS 252 - Physics II</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/chem/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CHEM 121 - General Chemistry I</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/chem/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CHEM 122 - General Chemistry II</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/engr/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ENGR 321 - Introduction to Robotics</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 160 - Computer Science I</a>
                 </div>
-                <h3 class="text-lg font-medium text-zinc-200 mb-4 mt-4">Skills</h3>  
-                <div class="flex flex-wrap gap-3">
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">HTML</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">CSS</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">Bootstrap</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">Tailwind</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">Soldering</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">Git</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">3D Printing</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">Thermomechanical Analysis</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">Differential Scanning Calorimetry</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">Dynamic Mechanical Analysis</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">Power Tools</span>
-                  <span class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm transition duration-300 hover:border-red-700 hover:text-red-400">Manufacturing</span>
-
-                  </div>
+              </details>
+              <details class="group/planned">
+                <summary class="flex items-center justify-between cursor-pointer list-none mb-4">
+                  <h3 class="text-lg font-medium text-zinc-200">Planned Classes</h3>
+                  <span class="text-zinc-500 text-sm transition duration-300 group-open/planned:rotate-180">▼</span>
+                </summary>
+                <div class="flex flex-wrap gap-3 justify-center">
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 412 - Engineering Measurements</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 421 - Theory of Vibrations</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 442 - Machine Design I</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 443 - Machine Design II</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 454 - Heat and Mass Transfer</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 457 - Thermal Systems Laboratory</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 460 - Product Design and Development</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 461 - Design Project I</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 462 - Design Project II</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 475 - Automatic Controls</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 476 - Mechatronics</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 477 - Finite Element Analysis</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 483 - Introduction to Computational Fluid Dynamics</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 161 - Computer Science II</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 213 - Modern Software Development</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 425 - Machine Learning</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 485 - Autonomous Command and AI for Robots and Cyber-Physical Systems</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/ece/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ECE 301 - Electrical Engineering I</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/ece/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ECE 306 - Electrical Engineering Lab I</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/engr/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ENGR 327 - Ethics, Engineering, and Technology</a>
                 </div>
+              </details>
               </div>
             </div>
           </div>
@@ -238,34 +255,66 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 mb-8">
-          <div class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
-            <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Boulderbot</h3>
-            <p class="mt-3 text-zinc-400 leading-7">
-              I led a team of 5 to design the drivetrain and weapon systems of a 30lb combat robot, that competed in UIUC's Robobrawl XI.
-            </p>
+          <div class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+            <div class="overflow-hidden h-48">
+              <img
+                src="/images/projects/boulderbot.jpg"
+                alt="Boulderbot combat robot"
+                class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-[1.05]"
+              />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Boulderbot</h3>
+              <p class="mt-3 text-zinc-400 leading-7">
+                I led a team of 5 to design the drivetrain and weapon systems of a 30lb combat robot, that competed in UIUC's Robobrawl XI.
+              </p>
+            </div>
           </div>
 
-          <div class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
-            <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Cowbot</h3>
-            <p class="mt-3 text-zinc-400 leading-7">
-              I worked as a part of a team that designed and built a competitive 30lb combat robot, dubbed COWBOT, to compete in UIUC's Robobrawl X.
-            </p>
+          <div class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+            <div class="overflow-hidden h-48">
+              <img
+                src="/images/projects/cowbot.PNG"
+                alt="Cowbot combat robot"
+                class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-[1.05]"
+              />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Cowbot</h3>
+              <p class="mt-3 text-zinc-400 leading-7">
+                I worked as a part of a team that designed and built a competitive 30lb combat robot, dubbed COWBOT, to compete in UIUC's Robobrawl X.
+              </p>
+            </div>
           </div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
-            <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Portfolio Website</h3>
-            <p class="mt-3 text-zinc-400 leading-7">
-              You're looking at it right now! I've gone through multiple different iterations, updating as I gain more experience.
-            </p>
+          <div class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+            <div class="overflow-hidden h-48">
+              <img
+                src="/images/projects/portfolio.png"
+                alt="Portfolio website screenshot"
+                class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-[1.05]"
+              />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Portfolio Website</h3>
+              <p class="mt-3 text-zinc-400 leading-7">
+                You're looking at it right now! I've gone through multiple different iterations, updating as I gain more experience.
+              </p>
+            </div>
           </div>
 
-          <div class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
-            <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">More to come...</h3>
-            <p class="mt-3 text-zinc-400 leading-7">
-              I've always got more project ideas, but not more time.
-            </p>
+          <div class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+            <div class="overflow-hidden h-48 flex items-center justify-center bg-zinc-900">
+              <p class="text-zinc-600 text-sm uppercase tracking-widest">Coming Soon</p>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">More to come...</h3>
+              <p class="mt-3 text-zinc-400 leading-7">
+                I've always got more project ideas, but don't always have more time.
+              </p>
+            </div>
           </div>
         </div>
       </div>
