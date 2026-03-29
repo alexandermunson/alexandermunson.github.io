@@ -1,279 +1,229 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexander Munson</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Exile&display=swap" rel="stylesheet">    
   </head>
-  <body style="background-color:rgb(236, 227, 205)">
-  
-    <button id="nameBanner" onclick="scrollToTop()">Alexander Munson</button>
 
-    <div id="scrollProgressBar"></div>
-
-    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
-      <span class="bar top"></span>
-      <span class="bar middle"></span>
-      <span class="bar bottom"></span>
-    </button>
-
-    <div class="overlay" id="overlay"></div>
-      <div class="sidebar" id="sidebar">
-        <ul>
-          <li><a href="#about" class="nav-link cascadiacode">About</a></li>
-          <li><a href="#skills" class="nav-link cascadiacode">Skills</a></li>
-          <li><a href="#portfolio" class="nav-link cascadiacode">Portfolio</a></li>
-          <li><a href="#experience" class="nav-link cascadiacode">Experience</a></li>
-          <li><a href="#relevant-coursework" class="nav-link cascadiacode">Relevant Coursework</a></li>
-          <li><a href="#contact" class="nav-link cascadiacode">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="main-content">
-        <section id="about">
-          <div class="container mt-4"style="padding-bottom:50px">
-            <div class="row align-items-center">
-              <div class="col-md-4" >
-                <img class="img-fluid" src="Images/trumpet on fence.jpg" style="border-radius: 20px; border: 5px solid rgb(60,60,60);" />
-              </div>
-              <div class="col-md-8">
-                <p class="ptext2L" id="intro"></p>
-                <p class="ptextL">
-                  My name is Alexander Munson, a sophomore studying Mechanical Engineering at 
-                  North Dakota State University. I would describe myself as a high-achieving student with a determination to learn 
-                  and succeed. On top of mechanical engineering, I am also pursuing a minor in robotics and computer science.
-                </p>
-                <p class="ptextL">
-                  This website is a work in progress. 
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="image-banner">
-            <img src="Images/pool.JPG">
-            <img src="Images/gradtrumpet.JPG">
-            <img src="Images/fc.jpg">
-            <img src="Images/longboard.jpg">
-            <img src="Images/trumpet.jpg">
-            <img src="Images/workingoncowbot.JPG">
-          </div>
-
-
-          <div class="container mt-4"style="padding-top:50px">
-            <div class="row align-items-center">
-              <div class="col-md-8">
-                <p class="ptext2R">A Bit More About Me!</p>
-                <p class="ptextR">
-                    I grew up in Bismarck, North Dakota. Early on, I started getting into STEM, and that definitely sparked 
-                    something that has kept on till now. There wasnt a ton to do in Bismarck besides school, so I ended up putting 
-                    a lot of energy into learning, and it really set the tone for where I'm headed. 
-                    Now, I've found my way to NDSU. So far my time here has been tons of fun and super busy. Im a member of the
-                    bison robotics club under combat robotics, as well as the climbing club. 
-                    I play the trumpet, guitar, a little bit of piano. Outside of music I love playing pool, 
-                    longboarding, making cool stuff, and learning about whatever I can get my hands on! 
-                </p>
-                </div>
-                <div class="col-md-4">
-                  <img class="img-fluid" src="Images/tree.JPG" style="border-radius: 20px; border: 5px solid rgb(60,60,60);" />
-                </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="skills">
-          <div class="container mt-5">
-            <h2 class="ptext3">Skills</h2>
-            <p class="ptextL">Hopefully this list grows and doesn't shrink...</p>
-
-            <div class="skills-category">
-              <h3 class="skills-heading">Well-Versed</h3>
-              <div class="skills-badge-grid">
-                <span class="skill-badge badge-advanced">CAD</span>
-                <span class="skill-badge badge-advanced">Microsoft Office Suite</span>
-                <span class="skill-badge badge-advanced">Google Workspace</span>
-              </div>
-            </div>
-
-            <div class="skills-category">
-              <h3 class="skills-heading">Intermediate</h3>
-              <div class="skills-badge-grid">
-                <span class="skill-badge badge-intermediate">MATLAB</span>
-                <span class="skill-badge badge-intermediate">3D Printing</span>
-                <span class="skill-badge badge-intermediate">Soldering</span>
-                <span class="skill-badge badge-intermediate">Computer Troubleshooting & Repair</span>
-                <span class="skill-badge badge-intermediate">Power Tools</span>
-                <span class="skill-badge badge-intermediate">Manufacturing</span>
-                <span class="skill-badge badge-intermediate">Java</span>
-                <span class="skill-badge badge-intermediate">TA Universal Analysis</span>
-                <span class="skill-badge badge-intermediate">Thermomechanical Analysis</span>
-                <span class="skill-badge badge-intermediate">Differential Scanning Calorimetry</span>
-                <span class="skill-badge badge-intermediate">Dynamic Mechanical Analysis</span>
-              </div>
-            </div>
-
-            <div class="skills-category">
-              <h3 class="skills-heading">Beginner</h3>
-              <div class="skills-badge-grid">
-                <span class="skill-badge badge-beginner">Git</span>
-                <span class="skill-badge badge-beginner">JavaScript</span>
-                <span class="skill-badge badge-beginner">Linux</span>
-                <span class="skill-badge badge-beginner">HTML</span>
-                <span class="skill-badge badge-beginner">CSS</span>
-                <span class="skill-badge badge-beginner">Bootstrap</span>
-                <span class="skill-badge badge-beginner">Power BI</span>
-              </div>
-            </div>
-
-        </section>
-        
-        <section id="portfolio">
-          <div class="container mt-5">
-            <h2 class="ptext3">Portfolio</h2>
-            <p class="ptextL">Below lies a good chunk of my large and small personal projects...</p>
-          </div>
-
-          <div class="projects-grid">
-            <div class="project-card">
-              <img src="Images/glamorshot.jpg" alt="Combat Bot">
-              <h3>Cowbot</h3>
-              <p>I worked as a part of a team that designed and built a competitive 30lb combat robot, dubbed COWBOT, to compete in UIUC's Robobrawl.</p>
-              <div class="buttons">
-                <a href="#" class="more-pictures-btn" data-id="cowbot">More Pictures</a>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <img src="Images/boulderbot.png" alt="Picture of boulderbot early desgin">
-              <h3>Boulderbot</h3>
-              <p>I lead a team of 5 to design the drivetrain and weapon systems of a 30lb combat robot, that will compete in UIUC's Robobrawl</p>
-              <div class="buttons">
-                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">More Pictures</a>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <img src="Images/Explodedframe-1.png" alt="Playground Design">
-              <h3>Playground Design</h3>
-              <p>I lead a team of 4 to design a playground that would fit in a predetermined location.</p>
-              <div class="buttons">
-                <a href="#" class="more-pictures-btn" data-id="playground">More Pictures</a>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <img src="Images/onshapespeaker.png" alt="Playground Design">
-              <h3>Dorm Surround Sound Speaker Mount</h3>
-              <p>Designed and 3D printed a mount that would work with the bedframes on campus.</p>
-              <div class="buttons">
-                <a href="#" class="more-pictures-btn" data-id="speaker">More Pictures</a>
-              </div>
-            </div>
-          </section>
-        <section id="experience">
-          <div class="container mt-5">
-            <h2 class="ptext3">Experience</h2>
-            <p class="ptextL">If you love your job you'll never work a day in your life...</p>
-          </div>
-
-          <div class="container mt-4"style="padding-top:50px; padding-bottom:50px">
-            <div class="row align-items-center">
-              <div class="col-md-8">
-                <p class="ptext2R">NASA JPL Intern</p>
-                <p class="ptextR">June 2026 - August 2026 | Pasadena, CA</p>
-                <p class="ptextR">
-                  This summer I will be working on application use case analysis and simulation for swarm of vehicles,
-                  analysis of RF and/or free space laser-based optical communication and communications related positioning, 
-                  navigation, timing, power wireless transfer as well as radio science, laboratory experiments with the above 
-                  relevant topics, hardware and software research and improvement for the above relevant topics.
-                </p>
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="Images/nasa_jpl.webp" style="border-radius: 20px; border: 5px solid rgb(60,60,60);" />
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-4"style="padding-bottom:50px">
-            <div class="row align-items-center">
-              <div class="col-md-4" >
-                <img class="img-fluid" src="Images/marvincomposites.png" style="border-radius: 20px; border: 5px solid rgb(60, 60, 60);" />
-              </div>
-              <div class="col-md-8">
-                <p class="ptext2L">Research and Development Intern</p>
-                <p class="ptextL">
-                  June 2025 - Present | Fargo, ND
-                </p>
-                <p class="ptextL">
-                  I conducted TGA, DSC, MTS QTest Elite mechanical assessments (flexural, tensile, compression) and physical characterizations 
-                  (density measurements, PATTI coating adhesion tests, inorganic decompositions, Omnimark moisture tests) to assess and qualify resin formulations, 
-                  fiberglass mats, and fiberglass rovings for composite parts. I also assessed a decade-long manufacturing issue using a root cause analysis 
-                  approach, covering many different possibilities, and then provided the most effective opportunities for improvement to be implemented in production.
-
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-4"style="padding-top:50px">
-            <div class="row align-items-center">
-              <div class="col-md-8">
-                <p class="ptext2R">Student Technology Specialist Intern</p>
-                <p class="ptextR">June 2021 - August 2024 | Bismarck, ND</p>
-                <p class="ptextR">
-                  I used time management to efficiently repair student Chromebooks, keeping the flow of work 
-                  and output to a high standard. I learned and refined processes to repair computers, as well
-                  as install peripheral technology into classrooms, creating a successful and innovative
-                  environment. I troubleshot existing issues and solved them quickly to keep the school
-                  district technology working correctly and efficiently. I installed and tested numerous 
-                  rooms of audio visual equipment, such as projectors and classroom speaker systems, in 
-                  classrooms that were in use as well as working in an active construction site installing 
-                  the equipment in new schools.
-                </p>
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="Images/chs.png" style="border-radius: 20px; border: 5px solid rgb(60,60,60);" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id = "relevant-coursework">
-
-        </section>
-
-        <section id="contact">
-        
-          <div class="contact-section">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out or check out more of my work:</p>
-            <div class="contact-links">
-              <a href="https://github.com/alexandermunson" target="_blank" class="contact-icon">
-                <img src="Images/github.png" alt="GitHub" />
-                GitHub
-              </a>
-
-              <a href="https://www.linkedin.com/in/alexander-munson-31140032b" target="_blank" class="contact-icon">
-                <img src="Images/linkedin.png" alt="LinkedIn" />
-                LinkedIn
-              </a>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <script src="script.js"></script>
-      <div id="imagePopup" class="popup-overlay">
-        <span class="close-btn">&times;</span> 
-        <div class="popup-content">
-          <div class="popup-images" id="popupImages"></div>
+  <body class="bg-black text-white antialiased">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-6">
+      <div class="max-w-5xl text-center reveal is-visible">
+        <p class="text-sm uppercase tracking-[0.3em] text-zinc-400 mb-6">
+          Mechanical Engineering Student • Lifelong Learner • Problem Solver
+        </p>
+        <h1 class="text-5xl md:text-7xl font-semibold tracking-tight leading-tight">
+          A mechanical engineering student driven to
+          <span class="text-zinc-300">build, learn, and push limits.</span>
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto">
+          Welcome to my portfolio. I’m Alexander Munson, a mechanical engineering student
+          focused on learning as much as I can, and applying it to find simple yet elegant solutions.
+        </p>
+        <div class="mt-10 flex justify-center gap-4">
+          <a href="#experience" class="px-6 py-3 rounded-full bg-white text-black font-medium transition duration-300 hover:bg-orange-500 hover:text-white hover:scale-105 hover:shadow-[0_0_25px_rgba(249,115,22,0.25)]">
+            View Experience
+          </a>
+          <a href="#contact" class="px-6 py-3 rounded-full border border-zinc-700 text-white transition duration-300 hover:border-orange-500 hover:text-orange-400 hover:bg-zinc-900 hover:scale-105 hover:shadow-[0_0_25px_rgba(249,115,22,0.15)]">
+            Contact Me
+          </a>
         </div>
       </div>
+    </section>
+
+    <!-- About Section -->
+<section class="reveal py-24 px-6 border-t border-zinc-800">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Photo -->
+    <div class="group reveal-delay-1">
+      <div class="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+        <img
+          src="/images/profile.jpg"
+          alt="Alexander Munson"
+          class="w-full h-[500px] object-cover transition duration-700 ease-out group-hover:scale-[1.02]"
+        />
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <p class="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-4">About</p>
+      <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mb-6">
+        // this is me
+      </h2>
+      <p class="text-zinc-400 text-lg leading-8 max-w-xl">
+        I’m a mechanical engineering student at North Dakota State University pursuing
+        minors in robotics and computer science. I’m driven by curiosity, hard work,
+        and a constant desire to grow. Whether I’m working on research, design, or
+        hands-on engineering projects, I aim to keep learning and pushing beyond what
+        is expected of me.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6 border-t border-zinc-800">
+      <div class="max-w-5xl mx-auto">
+        <div class="reveal">
+          <p class="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-4">#opentowork</p>
+          <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mb-12">
+            // experience
+          </h2>
+        </div>
+
+        <div class="group reveal rounded-3xl border border-zinc-800 bg-zinc-950 p-8 mb-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+            <div>
+              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">JPL Summer Intern</h3>
+              <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-orange-300">Jet Propulsion Laboratry | Pasadena, CA</p>
+            </div>
+            <p class="text-zinc-500 transition duration-300 group-hover:text-orange-300">June 2026 - August 2026</p>
+          </div>
+          <p class="mt-4 text-zinc-400 leading-7">
+            This summer I will be working on application use case analysis and simulation for swarm of vehicles,
+            analysis of RF and/or free space laser-based optical communication and communications related
+            positioning, navigation, timing, power wireless transfer as well as radio science, laboratory
+            experiments with the above relevant topics, hardware and software research and improvement for
+            the above relevant topics.
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          <div class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+              <div>
+                <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Research and Development Engineering Intern</h3>
+                <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-orange-300">Marvin Composites | Fargo, ND</p>
+              </div>
+              <p class="text-zinc-500 transition duration-300 group-hover:text-orange-300"> June 2025 – Present</p>
+            </div>
+            <p class="mt-4 text-zinc-400 leading-7">
+              I conducted TGA, DSC, MTS QTest Elite mechanical assessments (flexural, tensile, compression)
+              and physical characterizations (density measurements, PATTI coating adhesion tests, inorganic
+              decompositions, Omnimark moisture tests) to assess and qualify resin formulations, fiberglass
+              mats, and fiberglass rovings for composite parts. I also assessed a decade-long manufacturing
+              issue using a root cause analysis approach, covering many different possibilities, and then
+              provided the most effective opportunities for improvement to be implemented in production.
+            </p>
+          </div>
+
+          <div class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+              <div>
+                <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Student Technology Specialist Intern</h3>
+                <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-orange-300">Bismarck Public Schools | Bismarck, ND</p>
+              </div>
+              <p class="text-zinc-500 transition duration-300 group-hover:text-orange-300">June 2021 - August 2024</p>
+            </div>
+            <p class="mt-4 text-zinc-400 leading-7">
+              I used time management to efficiently repair student Chromebooks, keeping the flow of work and
+              output to a high standard. I learned and refined processes to repair computers, as well as install
+              peripheral technology into classrooms, creating a successful and innovative environment. I
+              troubleshot existing issues and solved them quickly to keep the school district technology working
+              correctly and efficiently. I installed and tested numerous rooms of audio visual equipment, such
+              as projectors and classroom speaker systems, in classrooms that were in use as well as working in
+              an active construction site installing the equipment in new schools.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 px-6 border-t border-zinc-800">
+      <div class="max-w-5xl mx-auto">
+        <div class="reveal">
+          <p class="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-4">Education</p>
+          <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mb-12">
+            // academic background
+          </h2>
+        </div>
+
+        <div class="group reveal rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-[#0a5640] hover:bg-[#0a5640]/10 hover:shadow-[0_0_30px_rgba(255,199,42,0.18)]">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+            <div>
+              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-[#ffc72a]">North Dakota State University</h3>
+              <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-[#0a5640]">B.S. in Mechanical Engineering, Minors in Computer Science and Robotics</p>
+            </div>
+            <p class="text-zinc-500 transition duration-300 group-hover:text-[#ffc72a]">Expected Graduation: 2028</p>
+          </div>
+          <p class="mt-4 text-zinc-400 leading-7">
+            Extracuriculars: Bison Robotics - Combat Robotics, Jazz Lab Band<br>
+            Honors: Harry D McGovern Scholar, Dean's List (all semesters)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 border-t border-zinc-800">
+      <div class="max-w-5xl mx-auto">
+        <div class="reveal">
+          <p class="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-4">Projects</p>
+          <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mb-12">
+            // things i’ve built
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+            <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Boulderbot</h3>
+            <p class="mt-3 text-zinc-400 leading-7">
+              I led a team of 5 to design the drivetrain and weapon systems of a 30lb combat robot, that competed in UIUC's Robobrawl XI.
+            </p>
+          </div>
+
+          <div class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+            <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Cowbot</h3>
+            <p class="mt-3 text-zinc-400 leading-7">
+              I worked as a part of a team that designed and built a competitive 30lb combat robot, dubbed COWBOT, to compete in UIUC's Robobrawl X.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+            <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Portfolio Website</h3>
+            <p class="mt-3 text-zinc-400 leading-7">
+              You're looking at it right now! I've gone through multiple different iterations, updating as I gain more experience.
+            </p>
+          </div>
+
+          <div class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+            <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">More to come...</h3>
+            <p class="mt-3 text-zinc-400 leading-7">
+              I've always got more project ideas, but not more time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 border-t border-zinc-800">
+      <div class="max-w-4xl mx-auto text-center reveal">
+        <p class="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-4">Contact</p>
+        <h2 class="text-3xl md:text-5xl font-semibold tracking-tight">
+          Reach out!
+        </h2>
+        <p class="mt-6 text-zinc-400 text-lg max-w-2xl mx-auto">
+          Feel free to reach out for collaborations, or just to connect!
+        </p>
+        <div class="mt-10 flex justify-center gap-4">
+          <a href="https://github.com/alexandermunson" class="px-6 py-3 rounded-full bg-white text-black font-medium transition duration-300 hover:bg-orange-500 hover:text-white hover:scale-105 hover:shadow-[0_0_25px_rgba(249,115,22,0.25)]">
+            GitHub
+          </a>
+          <a href="www.linkedin.com/in/alexander-munson-31140032b" class="px-6 py-3 rounded-full border border-zinc-700 text-white transition duration-300 hover:border-orange-500 hover:text-orange-400 hover:bg-zinc-900 hover:scale-105 hover:shadow-[0_0_25px_rgba(249,115,22,0.15)]">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
