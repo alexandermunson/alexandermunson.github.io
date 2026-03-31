@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,19 @@
   </head>
 
   <body class="bg-black text-white antialiased">
+    <!-- Nav -->
+    <div id="navbar" class="fixed top-5 left-0 right-0 z-50 flex justify-center px-6 transition-transform duration-300">
+      <nav class="flex items-center justify-between gap-8 px-6 py-3 rounded-full bg-zinc-900/80 backdrop-blur-md border border-zinc-700/50 shadow-lg w-full max-w-2xl">
+        <span class="text-sm font-medium tracking-wide text-zinc-200 whitespace-nowrap">Alexander Munson</span>
+        <div class="flex items-center gap-6 text-sm text-zinc-400">
+          <a href="#experience" class="transition duration-200 hover:text-white whitespace-nowrap">Experience</a>
+          <a href="#education" class="transition duration-200 hover:text-white whitespace-nowrap">Education</a>
+          <a href="#projects" class="transition duration-200 hover:text-white whitespace-nowrap">Projects</a>
+        </div>
+        <a href="#contact" class="px-4 py-1.5 rounded-full bg-white text-black text-sm font-medium transition duration-200 hover:bg-zinc-200 whitespace-nowrap">Contact</a>
+      </nav>
+    </div>
+
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center px-6 bg-[url('/images/hero.JPG')] bg-cover bg-center">
       <div class="absolute inset-0 bg-linear-to-b from-black/50 to-black"></div>
@@ -177,19 +190,7 @@
           </p>
         </div>
         
-        <div class="group reveal rounded-3xl border border-zinc-800 bg-zinc-950 p-8 mt-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-red-500 hover:bg-red-500/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.18)]">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
-            <div>
-              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-blue-400"><a href="https://chs.bismarckschools.org/" target="_blank" rel="noopener noreferrer">Century High School</a></h3>
-              <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-red-400">GPA - 3.89</p>
-            </div>
-            <p class="text-zinc-500 transition duration-300 group-hover:text-blue-400">2020 - 2024</p>
-          </div>
-          <p class="mt-4 text-zinc-400 leading-7">
-            Extracuriculars: <br>
-            Honors:
-          </p>
-        </div>
+        
         
         <div class="reveal">
           <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mt-8 mb-12">
@@ -271,7 +272,7 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 mb-8">
-          <div class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+          <div data-project="boulderbot" class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)] cursor-pointer">
             <div class="overflow-hidden h-48">
               <img
                 src="/images/projects/boulderbot.jpg"
@@ -287,7 +288,7 @@
             </div>
           </div>
 
-          <div class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+          <div data-project="cowbot" class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)] cursor-pointer">
             <div class="overflow-hidden h-48">
               <img
                 src="/images/projects/cowbot.PNG"
@@ -305,7 +306,7 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+          <div data-project="playground" class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)] cursor-pointer">
             <div class="overflow-hidden h-48">
               <img
                 src="/images/projects/playground.png"
@@ -323,7 +324,7 @@
 
           
 
-          <div class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+          <div data-project="portfolio" class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)] cursor-pointer">
             <div class="overflow-hidden h-48">
               <img
                 src="/images/projects/portfolio.png"
@@ -381,6 +382,23 @@
         </div>
       </div>
     </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 z-100 flex items-center justify-center p-6 opacity-0 pointer-events-none transition-opacity duration-300">
+      <div id="modal-backdrop" class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+      <div id="modal-content" class="relative z-10 bg-zinc-900 border border-zinc-700 rounded-3xl max-w-2xl w-full p-8 max-h-[85vh] overflow-y-auto scale-95 transition-transform duration-300">
+        <button id="modal-close" class="absolute top-6 right-6 text-zinc-500 hover:text-white transition duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div id="modal-image-container" class="overflow-hidden rounded-2xl h-56 mb-6">
+          <img id="modal-image" src="" alt="" class="w-full h-full object-cover" />
+        </div>
+        <h2 id="modal-title" class="text-2xl font-semibold mb-3 text-white"></h2>
+        <p id="modal-description" class="text-zinc-400 leading-7 mb-6"></p>
+        <div id="modal-tags" class="flex flex-wrap gap-2 mb-6"></div>
+        <div id="modal-links" class="flex flex-wrap gap-3"></div>
+      </div>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>
