@@ -18,7 +18,6 @@ document.querySelectorAll('.reveal').forEach((el) => {
   observer.observe(el);
 });
 
-// Project modal
 const projects = {
   boulderbot: {
     title: 'Boulderbot',

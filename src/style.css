@@ -27,3 +27,10 @@ html {
 .reveal-delay-3 {
   transition-delay: 0.36s;
 }
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
