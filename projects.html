@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects — Alexander Munson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
 
   <body class="bg-black text-white antialiased">
@@ -12,63 +15,111 @@
         <a href="/" class="text-sm font-medium tracking-wide text-zinc-200 whitespace-nowrap transition duration-200 hover:text-white">Alexander Munson</a>
         <div class="hidden md:flex items-center gap-6 text-sm text-zinc-400">
           <a href="/#experience" class="transition duration-200 hover:text-white whitespace-nowrap">Experience</a>
+          <a href="/projects.html" class="text-white whitespace-nowrap">Porfolio</a>
           <a href="/#education" class="transition duration-200 hover:text-white whitespace-nowrap">Education</a>
-          <a href="/projects.html" class="text-white whitespace-nowrap">Projects</a>
         </div>
         <a href="/#contact" class="px-4 py-1.5 rounded-full bg-white text-black text-sm font-medium transition duration-200 hover:bg-zinc-200 whitespace-nowrap">Contact</a>
       </nav>
     </div>
 
-    <section class="relative min-h-screen bg-cover bg-center" style="background-image: url('/images/board.png')">
+    <section class="relative min-h-screen bg-cover bg-center" style="background-image: url('/images/mountains.JPG')">
       <div class="absolute inset-0 bg-linear-to-b from-black/40 to-black"></div>
-      <div class="relative z-10 min-h-screen flex items-center justify-center">
-        <h1 class="font-semibold tracking-tight" style="font-size: clamp(5rem, 15vw, 12rem); color: rgb(255, 179, 66);">Projects</h1>
+      <div class="relative z-10 min-h-screen flex items-center justify-center pb-40">
+        <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: clamp(5rem, 18vw, 16rem); letter-spacing: 0.06em; background: linear-gradient(170deg, #ffffff 0%, rgb(32, 130, 234) 55%, rgb(14, 60, 140) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 60px rgba(32, 130, 234, 0.55));">Portfolio</h1>
       </div>
     </section>
 
     <section class="py-24 px-6">
-      <div class="max-w-5xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-8">
-          <div data-project="boulderbot" class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)] cursor-pointer">
-            <div class="overflow-hidden h-48">
-              <img src="/images/projects/boulderbot.jpg" alt="Boulderbot combat robot" class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-[1.05]" />
-            </div>
-            <div class="p-8">
-              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Boulderbot</h3>
-              <p class="mt-3 text-zinc-400 leading-7">I led a team of 5 to design the drivetrain and weapon systems of a 30lb combat robot, that competed in UIUC's Robobrawl XI.</p>
-            </div>
-          </div>
+      <div class="max-w-6xl mx-auto">
 
-          <div data-project="cowbot" class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)] cursor-pointer">
-            <div class="overflow-hidden h-48">
-              <img src="/images/projects/cowbot.PNG" alt="Cowbot combat robot" class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-[1.05]" />
-            </div>
-            <div class="p-8">
-              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Cowbot</h3>
-              <p class="mt-3 text-zinc-400 leading-7">I worked as a part of a team that designed and built a competitive 30lb combat robot, dubbed COWBOT, to compete in UIUC's Robobrawl X.</p>
-            </div>
-          </div>
-
-          <div data-project="playground" class="group reveal reveal-delay-1 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)] cursor-pointer">
-            <div class="overflow-hidden h-48">
-              <img src="/images/projects/playground.png" alt="Assembled playground drawing" class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-[1.05]" />
-            </div>
-            <div class="p-8">
-              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Playground Design</h3>
-              <p class="mt-3 text-zinc-400 leading-7">I led a team of 4 engineering students to plan and design a playground to fit in the Fargo area. Term project for ME 212 at NDSU.</p>
-            </div>
-          </div>
-
-          <div data-project="portfolio" class="group reveal reveal-delay-2 rounded-3xl border border-zinc-800 bg-zinc-950 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)] cursor-pointer">
-            <div class="overflow-hidden h-48">
-              <img src="/images/projects/portfolio.png" alt="Portfolio website screenshot" class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-[1.05]" />
-            </div>
-            <div class="p-8">
-              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-orange-400">Portfolio Website</h3>
-              <p class="mt-3 text-zinc-400 leading-7">You're looking at it right now! I've gone through multiple different iterations, updating as I gain more experience.</p>
-            </div>
-          </div>
+        <div class="reveal mb-12">
+          <p class="text-xs font-medium tracking-widest uppercase text-blue-400 mb-2">Projects</p>
+          <h2 class="text-3xl font-semibold">// bigger stuff</h2>
         </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+
+          <a href="/boulderbot.html" class="group reveal reveal-delay-1 block">
+            <div class="rounded-2xl overflow-hidden aspect-4/3 relative">
+              <img src="/images/projects/boulderbot.jpg" alt="Boulderbot" class="w-full h-full object-cover transition duration-700 group-hover:scale-[1.05]" />
+              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end justify-end p-4">
+                <span class="translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 text-sm text-white bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full">View Project →</span>
+              </div>
+            </div>
+            <div class="pt-4 px-1">
+              <h3 class="text-xl font-semibold group-hover:text-blue-400 transition duration-200 mb-1">Boulderbot</h3>
+              <p class="text-sm text-zinc-500 mb-2">UIUC Robobrawl XI</p>
+              <div class="flex items-center gap-3 flex-wrap">
+                <span class="text-xs px-2.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400">Competition</span>
+                <span class="text-xs text-zinc-500">Team Lead · 5-person team · 30lb class</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="/cowbot.html" class="group reveal reveal-delay-2 block">
+            <div class="rounded-2xl overflow-hidden aspect-4/3 relative">
+              <img src="/images/projects/cowbot.PNG" alt="Cowbot" class="w-full h-full object-cover transition duration-700 group-hover:scale-[1.05]" />
+              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end justify-end p-4">
+                <span class="translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 text-sm text-white bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full">View Project →</span>
+              </div>
+            </div>
+            <div class="pt-4 px-1">
+              <h3 class="text-xl font-semibold group-hover:text-blue-400 transition duration-200 mb-1">Cowbot</h3>
+              <p class="text-sm text-zinc-500 mb-2">UIUC Robobrawl X</p>
+              <div class="flex items-center gap-3 flex-wrap">
+                <span class="text-xs px-2.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400">Competition</span>
+                <span class="text-xs text-zinc-500">Contributor · Team project · 30lb class</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="border-t border-zinc-800 mb-16"></div>
+
+        <div class="reveal mb-12">
+          <p class="text-xs font-medium tracking-widest uppercase text-zinc-500 mb-2">Other Work</p>
+          <h2 class="text-3xl font-semibold">// smaller stuff</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div data-project="playground" class="group reveal reveal-delay-1 cursor-pointer">
+            <div class="rounded-2xl overflow-hidden aspect-video relative">
+              <img src="/images/projects/playground.png" alt="Playground Design" class="w-full h-full object-cover transition duration-700 group-hover:scale-[1.05]" />
+              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end justify-end p-4">
+                <span class="translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 text-sm text-white bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full">Learn More</span>
+              </div>
+            </div>
+            <div class="pt-4 px-1">
+              <h3 class="text-lg font-semibold group-hover:text-blue-400 transition duration-200 mb-1">Playground Design</h3>
+              <p class="text-sm text-zinc-500 mb-2">ME 212 — NDSU</p>
+              <div class="flex items-center gap-3 flex-wrap">
+                <span class="text-xs px-2.5 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-400">Academic</span>
+                <span class="text-xs text-zinc-500">Team Lead · 4-person team</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-project="portfolio" class="group reveal reveal-delay-2 cursor-pointer">
+            <div class="rounded-2xl overflow-hidden aspect-video relative">
+              <img src="/images/projects/portfolio.png" alt="Portfolio Website" class="w-full h-full object-cover transition duration-700 group-hover:scale-[1.05]" />
+              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end justify-end p-4">
+                <span class="translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 text-sm text-white bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full">Learn More</span>
+              </div>
+            </div>
+            <div class="pt-4 px-1">
+              <h3 class="text-lg font-semibold group-hover:text-blue-400 transition duration-200 mb-1">Portfolio Website</h3>
+              <p class="text-sm text-zinc-500 mb-2">Personal Project</p>
+              <div class="flex items-center gap-3 flex-wrap">
+                <span class="text-xs px-2.5 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-400">Personal</span>
+                <span class="text-xs text-zinc-500">Solo</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
 

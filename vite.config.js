@@ -10,6 +10,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         projects: resolve(__dirname, 'projects.html'),
+        boulderbot: resolve(__dirname, 'boulderbot.html'),
+        cowbot: resolve(__dirname, 'cowbot.html'),
       },
     },
   },

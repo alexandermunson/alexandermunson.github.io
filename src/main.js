@@ -37,7 +37,7 @@ const projects = {
     title: 'Playground Design',
     image: '/images/projects/playground2.png',
     description: 'I led a team of 4 engineering students to plan and design a playground to fit in the Fargo, ND area. The project involved site analysis, safety compliance, and full CAD documentation. This was the term project for ME 212 (Fundamentals of Visual Communication for Engineers) at NDSU.',
-    tags: ['CAD', 'Team Leadership', 'Civil Design', 'Technical Drawing'],
+    tags: ['CAD', 'Team Leadership', 'Technical Drawing'],
     links: [],
   },
   portfolio: {
