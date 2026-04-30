@@ -19,20 +19,6 @@ document.querySelectorAll('.reveal').forEach((el) => {
 });
 
 const projects = {
-  boulderbot: {
-    title: 'Boulderbot',
-    image: '/images/projects/boulderbot.jpg',
-    description: 'I led a team of 5 to design the drivetrain and weapon systems of a 30lb combat robot that competed in UIUC\'s Robobrawl XI. The robot featured a beater bar weapon and a four-wheel drive system optimized for pushing power. The main goal was to take what we had learned from our previous robot, Cowbot, and implement changes and improvments that we had thought of and learned from.',
-    tags: ['Combat Robotics', 'Mechanical Design', 'CAD', 'Team Leadership'],
-    links: [],
-  },
-  cowbot: {
-    title: 'Cowbot',
-    image: '/images/projects/cowbot2.jpg',
-    description: 'I worked as part of a team that designed and built a competitive 30lb combat robot, dubbed COWBOT, to compete in UIUC\'s Robobrawl X. I contributed to the mechanical design and fabrication of the robot\'s drivetrain and weapon system.',
-    tags: ['Combat Robotics', 'Mechanical Design', 'Fabrication', 'Teamwork'],
-    links: [],
-  },
   playground: {
     title: 'Playground Design',
     image: '/images/projects/playground2.png',
@@ -48,6 +34,20 @@ const projects = {
     links: [
       { label: 'View Source', href: 'https://github.com/alexandermunson/alexandermunson.github.io' },
     ],
+  },
+  lineFollower: {
+    title: 'Line Following Robot',
+    image: '/images/projects/linefollower.png',
+    description: 'This was the final project for my Introduction to Robotics class! We were given a kit and some outline for the code and then put it together to make it work!',
+    tags: ['Sensor Integration', 'Python'],
+    links: [],
+  },
+  speakerMount: {
+    title: 'Dorm Speaker Mount',
+    image: '/images/projects/speaker.jpg',
+    description: 'In my freshman year me and my roomates wanted to get a movie theatre setup in our dorm, so we did! I designed some mounts for our rear left and right speakers that hooked onto the bedframe and sat behind us using OnShape and the NDSU Library 3d printers.',
+    tags: ['CAD', 'OnShape','3D Printing'],
+    links: [],
   },
 };
 

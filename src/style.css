@@ -24,10 +24,6 @@ html {
   transition-delay: 0.24s;
 }
 
-.reveal-delay-3 {
-  transition-delay: 0.36s;
-}
-
 .link-underline {
   position: relative;
   text-decoration: none;
@@ -46,11 +42,4 @@ html {
 }
 .link-underline:hover::after {
   transform: scaleX(1);
-}
-
-.scrollbar-hide {
-  scrollbar-width: none;
-}
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
 }

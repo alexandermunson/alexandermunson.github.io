@@ -10,26 +10,28 @@
   </head>
 
   <body class="bg-black text-white antialiased">
+    
+
     <div id="navbar" class="fixed top-5 left-0 right-0 z-50 flex justify-center px-6 transition-transform duration-300">
       <nav class="flex items-center justify-between gap-4 px-5 py-3 rounded-full bg-zinc-900/80 backdrop-blur-md border border-zinc-700/50 shadow-lg w-full max-w-2xl">
-        <a href="/" class="text-sm font-medium tracking-wide text-zinc-200 whitespace-nowrap transition duration-200 hover:text-white">Alexander Munson</a>
+        <span class="text-sm font-medium tracking-wide text-zinc-200 whitespace-nowrap">Alexander Munson</span>
         <div class="hidden md:flex items-center gap-6 text-sm text-zinc-400">
           <a href="/#experience" class="transition duration-200 hover:text-white whitespace-nowrap">Experience</a>
-          <a href="/projects.html" class="text-white whitespace-nowrap">Porfolio</a>
+          <a href="/projects.html" class="text-white whitespace-nowrap">Portfolio</a>
           <a href="/#education" class="transition duration-200 hover:text-white whitespace-nowrap">Education</a>
         </div>
-        <a href="/#contact" class="px-4 py-1.5 rounded-full bg-white text-black text-sm font-medium transition duration-200 hover:bg-zinc-200 whitespace-nowrap">Contact</a>
+        <a href="#contact" class="px-4 py-1.5 rounded-full bg-white text-black text-sm font-medium transition duration-200 hover:bg-zinc-200 whitespace-nowrap">Contact</a>
       </nav>
     </div>
 
-    <section class="relative min-h-screen bg-cover bg-center" style="background-image: url('/images/mountains.JPG')">
+    <section class="relative bg-cover bg-center" style="min-height: 70vh; background-image: url('/images/mountains.JPG')">
       <div class="absolute inset-0 bg-linear-to-b from-black/40 to-black"></div>
-      <div class="relative z-10 min-h-screen flex items-center justify-center pb-40">
+      <div class="relative z-10 flex items-center justify-center pb-16" style="min-height: 70vh">
         <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: clamp(5rem, 18vw, 16rem); letter-spacing: 0.06em; background: linear-gradient(170deg, #ffffff 0%, rgb(32, 130, 234) 55%, rgb(14, 60, 140) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 60px rgba(32, 130, 234, 0.55));">Portfolio</h1>
       </div>
     </section>
 
-    <section class="py-24 px-6">
+    <section class="pt-14 pb-24 px-6">
       <div class="max-w-6xl mx-auto">
 
         <div class="reveal mb-12">
@@ -96,7 +98,7 @@
               <p class="text-sm text-zinc-500 mb-2">ME 212 — NDSU</p>
               <div class="flex items-center gap-3 flex-wrap">
                 <span class="text-xs px-2.5 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-400">Academic</span>
-                <span class="text-xs text-zinc-500">Team Lead · 4-person team</span>
+                <span class="text-xs text-zinc-500">Team Lead · 4 person team</span>
               </div>
             </div>
           </div>
@@ -110,6 +112,40 @@
             </div>
             <div class="pt-4 px-1">
               <h3 class="text-lg font-semibold group-hover:text-blue-400 transition duration-200 mb-1">Portfolio Website</h3>
+              <p class="text-sm text-zinc-500 mb-2">Personal Project</p>
+              <div class="flex items-center gap-3 flex-wrap">
+                <span class="text-xs px-2.5 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-400">Personal</span>
+                <span class="text-xs text-zinc-500">Solo</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-project="lineFollower" class="group reveal reveal-delay-2 cursor-pointer">
+            <div class="rounded-2xl overflow-hidden aspect-video relative">
+              <img src="/images/projects/linefollower.png" alt="Portfolio Website" class="w-full h-full object-cover transition duration-700 group-hover:scale-[1.05]" />
+              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end justify-end p-4">
+                <span class="translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 text-sm text-white bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full">Learn More</span>
+              </div>
+            </div>
+            <div class="pt-4 px-1">
+              <h3 class="text-lg font-semibold group-hover:text-blue-400 transition duration-200 mb-1">Line Following Robot</h3>
+              <p class="text-sm text-zinc-500 mb-2">ME 321 - NDSU</p>
+              <div class="flex items-center gap-3 flex-wrap">
+                <span class="text-xs px-2.5 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-400">Academic</span>
+                <span class="text-xs text-zinc-500">Team Member · 5 person Team</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-project="speakerMount" class="group reveal reveal-delay-2 cursor-pointer">
+            <div class="rounded-2xl overflow-hidden aspect-video relative">
+              <img src="/images/projects/onshapespeaker.png" alt="Portfolio Website" class="w-full h-full object-cover transition duration-700 group-hover:scale-[1.05]" />
+              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end justify-end p-4">
+                <span class="translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 text-sm text-white bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full">Learn More</span>
+              </div>
+            </div>
+            <div class="pt-4 px-1">
+              <h3 class="text-lg font-semibold group-hover:text-blue-400 transition duration-200 mb-1">Dorm Surround Sound Mount</h3>
               <p class="text-sm text-zinc-500 mb-2">Personal Project</p>
               <div class="flex items-center gap-3 flex-wrap">
                 <span class="text-xs px-2.5 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-400">Personal</span>
