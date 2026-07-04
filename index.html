@@ -29,10 +29,7 @@
           A mechanical engineering student driven to
           <span class="text-blue-300">build, learn, and succeed.</span>
         </h1>
-        <p class="mt-6 text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto">
-          Welcome to my website! I’m Alexander Munson, a mechanical engineering student
-          at North Dakota State University focused on learning and applying as much as I can.
-        </p>
+        
         <div class="mt-10 flex flex-wrap justify-center gap-4">
           <a href="#experience" class="px-6 py-3 rounded-full bg-white text-black font-medium transition duration-300 hover:bg-blue-500 hover:text-white hover:scale-105 hover:shadow-[0_0_25px_rgba(249,115,22,0.25)]">
             View Experience
@@ -103,11 +100,13 @@
         <p class="text-zinc-500 transition duration-300 group-hover:text-red-300">June 2026 - August 2026</p>
       </div>
       <p class="mt-4 text-zinc-400 leading-7">
-        This summer I will be working on application use case analysis and simulation for swarm of vehicles,
-        analysis of RF and/or free space laser-based optical communication and communications related
-        positioning, navigation, timing, power wireless transfer as well as radio science, laboratory
-        experiments with the above relevant topics, hardware and software research and improvement for
-        the above relevant topics.
+        I characterized how lunar-specific imaging conditions affect the reliability of 3D Gaussian splatting reconstructions 
+        for rover path planning. Using ordered image sequences from a lunar surface reconstruction processed through a 3DGS pipeline, 
+        I systematically varied critical lighting conditions to find where reconstruction quality breaks down. I then converted the 
+        3DGS output into a planner-usable costmap and ran navigation trials in simulation, comparing path success rate, efficiency, 
+        and collision rate against a ground-truth baseline on synthetic lunar-like terrain. 
+        I also looked at using a shortwave infrared time of flight (SWIR ToF) camera in conjunction with the stereo camera setup, 
+        and quantified how decisions are made in when information is conflicting.
       </p>
     </div>
 
@@ -127,13 +126,11 @@
         <p class="text-zinc-500 transition duration-300 group-hover:text-yellow-300">June 2025 – Present</p>
       </div>
       <p class="mt-4 text-zinc-400 leading-7">
-        I characterized how lunar-specific imaging conditions affect the reliability of 3D Gaussian splatting reconstructions 
-        for rover path planning. Using ordered image sequences from a lunar surface reconstruction processed through a 3DGS pipeline, 
-        I systematically varied critical lighting conditions to find where reconstruction quality breaks down. I then converted the 
-        3DGS output into a planner-usable costmap and ran navigation trials in simulation, comparing path success rate, efficiency, 
-        and collision rate against a ground-truth baseline on synthetic lunar-like terrain. 
-        I also looked at using a shortwave infrared time of flight (SWIR ToF) camera in conjunction with the stereo camera setup, 
-        and quantified how decisions are made in when information is conflicting.
+        I conducted TGA, DSC, MTS QTest Elite mechanical assessments and physical characterizations 
+        (density measurements, PATTI coating adhesion tests, inorganic decompositions, Omnimark moisture tests) to assess and qualify 
+        resin formulations, fiberglass mats, and fiberglass rovings for composite parts. I also assessed a decade-long manufacturing 
+        issue using a root cause analysis approach, covering many different possibilities, and then provided the most effective 
+        opportunities for improvement to be implemented in production.
       </p>
     </div>
 
@@ -165,7 +162,88 @@
   </div>
 </section>
 
+<section id="projects" class="py-24 px-6 border-t border-zinc-800">
+  <div class="max-w-5xl mx-auto">
+    <div class="reveal">
+      <p class="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-4">Projects</p>
+      <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mb-12">
+        // my stuff
+      </h2>
+    </div>
 
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-6 reveal">
+    
+      <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="gaussiansplatting">
+        <img src="/images/projects/moon.webp" alt="Boulderbot" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4 text-center">
+          <p class="text-white font-semibold text-lg leading-tight">3D Gaussian Splatting for Lunar Path Planning</p>
+          <p class="text-zinc-300 text-sm mt-1">NASA JPL</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="cowbot">
+        <img src="/images/projects/boulderbot_1.webp" alt="Boulderbot" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4 text-center">
+          <p class="text-white font-semibold text-lg leading-tight">Boulderbot</p>
+          <p class="text-zinc-300 text-sm mt-1">NDSU Combat Robotics</p>
+        </div>
+      </div>
+
+      
+
+      <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="lineFollower">
+        <img src="/images/projects/linefollower.jpeg" alt="Line Following Robot" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4 text-center">
+          <p class="text-white font-semibold text-lg leading-tight">Line Following Robot</p>
+          <p class="text-zinc-300 text-sm mt-1">Term Project</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="materialsterm">
+        <img src="/images/projects/carabiner.png" alt="Carabiner Material Analysis" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4 text-center">
+          <p class="text-white font-semibold text-lg leading-tight">Carabiner Material Analysis</p>
+          <p class="text-zinc-300 text-sm mt-1">Term Project</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="cowbot">
+        <img src="/images/projects/cowbot2.jpg" alt="Cowbot" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4 text-center">
+          <p class="text-white font-semibold text-lg leading-tight">Cowbot</p>
+          <p class="text-zinc-300 text-sm mt-1">NDSU Combat Robotics</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="playground">
+        <img src="/images/projects/playground2.png" alt="Playground Design" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4 text-center">
+          <p class="text-white font-semibold text-lg leading-tight">Playground Design</p>
+          <p class="text-zinc-300 text-sm mt-1">Term Project</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="portfolio">
+        <img src="/images/projects/portfolio.png" alt="Portfolio Website" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4 text-center">
+          <p class="text-white font-semibold text-lg leading-tight">Portfolio Website</p>
+          <p class="text-zinc-300 text-sm mt-1">Personal</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="speakerMount">
+        <img src="/images/projects/speaker.jpg" alt="Dorm Speaker Mount" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4 text-center">
+          <p class="text-white font-semibold text-lg leading-tight">Dorm Speaker Mount</p>
+          <p class="text-zinc-300 text-sm mt-1">Personal</p>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
 
     <section id="education" class="py-24 px-6 border-t border-zinc-800">
       <div class="max-w-5xl mx-auto">
@@ -185,7 +263,7 @@
             <p class="text-zinc-500 transition duration-300 group-hover:text-[#ffc72a]">Expected Graduation: 2028</p>
           </div>
           <p class="mt-4 text-zinc-400 leading-7">
-            Extracuriculars: Bison Robotics - Combat Robotics, Jazz Lab Band<br>
+            Extracuriculars: Bison Robotics, Combat Robotics, Jazz Lab Band, Climbing Club, Travel and Adventure Club<br>
             Honors: Harry D McGovern Scholar, Dean's List (all semesters)
           </p>
         </div>
@@ -245,13 +323,14 @@
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 475 - Automatic Controls</a>
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 476 - Mechatronics</a>
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 477 - Finite Element Analysis</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 478 - Advanced Flow Diagnostics</a>
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 483 - Introduction to Computational Fluid Dynamics</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/phys/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">PHYS 171 - Introductory Projects in Physics</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/phys/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">PHYS 350 - Modern Physics</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/phys/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">PHYS 430 - Quantum Computation</a>         
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 484 - Aerospace Propulsion</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 488 - Introduction to Aerodynamics</a>
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 161 - Computer Science II</a>
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 213 - Modern Software Development</a>
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 425 - Machine Learning</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/phys/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 430 - Quantum Computation</a>                           
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/ece/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ECE 301 - Electrical Engineering I</a>
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/ece/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ECE 306 - Electrical Engineering Lab I</a>
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/engr/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ENGR 327 - Ethics, Engineering, and Technology</a>

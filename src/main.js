@@ -21,7 +21,7 @@ document.querySelectorAll('.reveal').forEach((el) => {
 const projects = {
   playground: {
     title: 'Playground Design',
-    image: '/images/projects/playground2.png',
+    image: '/images/projects/playground.png',
     description: 'I led a team of 4 engineering students to plan and design a playground to fit in the Fargo, ND area. The project involved site analysis, safety compliance, and full CAD documentation. This was the term project for ME 212 (Fundamentals of Visual Communication for Engineers) at NDSU.',
     tags: ['CAD', 'Team Leadership', 'Technical Drawing'],
     links: [],
@@ -29,8 +29,8 @@ const projects = {
   portfolio: {
     title: 'Portfolio Website',
     image: '/images/projects/portfolio.png',
-    description: "You're looking at it right now! Built from scratch using Vite, Tailwind CSS v4, and vanilla JavaScript. I've gone through multiple iterations, updating the design and content as I gain more experience.",
-    tags: ['HTML', 'Tailwind CSS v4', 'JavaScript', 'Vite'],
+    description: "You're looking at it right now! Built from scratch using Vite, Tailwind CSS v4, and vanilla JavaScript. I've gone through multiple iterations, updating the design and content as I gain more experience. Also a healthy amount of AI...",
+    tags: ['HTML', 'Tailwind CSS v4', 'JavaScript', 'Vite', 'Claude Code'],
     links: [
       { label: 'View Source', href: 'https://github.com/alexandermunson/alexandermunson.github.io' },
     ],
@@ -39,7 +39,7 @@ const projects = {
     title: 'Line Following Robot',
     image: '/images/projects/linefollower.png',
     description: 'This was the final project for my Introduction to Robotics class! We were given a kit and some outline for the code and then put it together to make it work!',
-    tags: ['Sensor Integration', 'Python'],
+    tags: ['Sensor Integration', 'Python', 'PID Control'],
     links: [],
   },
   speakerMount: {
@@ -47,6 +47,34 @@ const projects = {
     image: '/images/projects/speaker.jpg',
     description: 'In my freshman year me and my roomates wanted to get a movie theatre setup in our dorm, so we did! I designed some mounts for our rear left and right speakers that hooked onto the bedframe and sat behind us using OnShape and the NDSU Library 3d printers.',
     tags: ['CAD', 'OnShape','3D Printing'],
+    links: [],
+  },
+  cowbot: {
+    title: 'Cowbot',
+    image: '/images/projects/cowbot.PNG',
+    description: 'Worked in a team of 5 engineering students to design the internal layout for a 30 lb combat robot. We modeled and manufactured parts in NDSU workshop dictated by our drawings made from our OnShape CAD model.',
+    tags: ['CAD', 'Technical Drawing'],
+    links: [],
+  },
+  cowbot: {
+    title: 'Boulderbot',
+    image: '/images/projects/boulderbot.jpg',
+    description: 'I lead a team of 4 engineering students to design and fabricate a 30 lb combat robot. Our goal was to significantly improve upon the previous year robot through optimizing and innovating in the robots drivetrain and weapon systems.',
+    tags: ['CAD', 'Technical Drawing','Team Leadership'],
+    links: [],
+  },
+  materialsterm: {
+    title: 'Carabiner Material Analysis',
+    image: '/images/projects/materialscycles.png',
+    description: 'This was the term project for my Material Science class at NDSU. We chose a product and did an analysis of the product, and the proposed ways to improve it. My group chose a carabiner that would be used in a manufacturing setting, and made changes to make it safe for climbing.',
+    tags: ['Material Analysis', 'Stress Analysis', 'Lifetime Analysis'],
+    links: [],
+  },
+  gaussiansplatting: {
+    title: 'Lunar Surface Path Planning',
+    image: '/images/projects/moon.webp',
+    description: 'This was my project that I worked on for NASA JPL. I looked the related path planning decisions a rover would make under bad lighting conditions in a lunar enviornment based on a 3D gaussian splatted reconstruction against a ground truth.',
+    tags: ['Python', 'Neural Radience Fields', 'Gaussian Splatting'],
     links: [],
   },
 };
