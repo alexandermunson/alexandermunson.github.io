@@ -100,7 +100,7 @@ function openModal(key) {
 
   const linksEl = document.getElementById('modal-links');
   linksEl.innerHTML = data.links
-    .map((l) => `<a href="${l.href}" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-full bg-white text-black text-sm font-medium transition duration-200 hover:bg-orange-500 hover:text-white">${l.label}</a>`)
+    .map((l) => `<a href="${l.href}" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-full bg-white text-black text-sm font-medium transition duration-200 hover:bg-blue-500 hover:text-white">${l.label}</a>`)
     .join('');
 
   modal.classList.remove('opacity-0', 'pointer-events-none');
