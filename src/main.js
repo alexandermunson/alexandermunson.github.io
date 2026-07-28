@@ -56,7 +56,7 @@ const projects = {
     tags: ['CAD', 'Technical Drawing'],
     links: [],
   },
-  cowbot: {
+  boulderbot: {
     title: 'Boulderbot',
     image: '/images/projects/boulderbot.jpg',
     description: 'I lead a team of 4 engineering students to design and fabricate a 30 lb combat robot. Our goal was to significantly improve upon the previous year robot through optimizing and innovating in the robots drivetrain and weapon systems.',
