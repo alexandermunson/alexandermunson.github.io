@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexander Munson</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="icon" href="/images/favicon/favicon.ico">
+
   </head>
 
   <body class="bg-black text-white antialiased">
@@ -55,8 +60,8 @@
       </h2>
       <p class="text-zinc-400 text-lg leading-8 max-w-xl">
         I’m a mechanical engineering student at North Dakota State University pursuing
-        minors in robotics, aerospace, and computer science. I’m driven by curiosity, hard work,
-        and a constant desire to grow. When I'm not in school or work I find time to play trumpet or guitar,
+        minors in robotics, aerospace engineering, physics, and computer science. I’m driven by curiosity, hard work,
+        and my ambition to grow. When I'm not in school or work I find time to play trumpet or guitar,
         longboard, and go bouldering. Whether I’m working on school, personal projects, or
         research, I always strive to bring all I've got to the table. 
       </p>
@@ -113,7 +118,7 @@
         </div>
         <div class="flex flex-col items-end gap-1">
           <p class="text-zinc-500 transition duration-300 group-hover:text-yellow-300">June 2025 – May 2026</p>
-          <p class="text-zinc-500 transition duration-300 group-hover:text-yellow-300">September 2026 – Present</p>
+          <p class="text-zinc-500 transition duration-300 group-hover:text-yellow-300">August 2026 – Present</p>
         </div>
       </div>
       <p class="mt-4 text-zinc-400 leading-7">
@@ -163,14 +168,22 @@
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-6 reveal">
-    
+
+      <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="gyroCube">
+        <img src="/images/projects/SelfBalancingCube01.webp" alt="Self Balancing Cube" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4 text-center">
+          <p class="text-white font-semibold text-lg leading-tight">Self Balancing Cube</p>
+          <p class="text-zinc-300 text-sm mt-1">Personal Project</p>
+        </div>
+      </div>
+
       <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="gaussiansplatting">
         <img src="/images/projects/moon.webp" alt="Boulderbot" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
         <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4 text-center">
           <p class="text-white font-semibold text-lg leading-tight">3D Gaussian Splatting for Lunar Path Planning</p>
           <p class="text-zinc-300 text-sm mt-1">NASA JPL</p>
         </div>
-      </div>
+      </div>      
 
       <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="boulderbot">
         <img src="/images/projects/boulderbot_1.webp" alt="Boulderbot" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
@@ -179,8 +192,6 @@
           <p class="text-zinc-300 text-sm mt-1">NDSU Combat Robotics</p>
         </div>
       </div>
-
-      
 
       <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer" data-project="lineFollower">
         <img src="/images/projects/linefollower.jpeg" alt="Line Following Robot" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
@@ -230,8 +241,7 @@
         </div>
       </div>
 
-      
-
+      </div>
     </div>
   </div>
 </section>
@@ -248,8 +258,8 @@
         <div class="group reveal rounded-3xl border border-zinc-800 bg-zinc-950 p-8 transition-all duration-700 ease-out hover:-translate-y-1 hover:border-[#0a5640] hover:bg-[#0a5640]/10 hover:shadow-[0_0_30px_rgba(255,199,42,0.18)]">
           <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
             <div>
-              <h3 class="text-2xl font-medium transition duration-300 group-hover:text-[#ffc72a]"><a href="https://www.ndsu.edu" target="_blank" rel="noopener noreferrer">North Dakota State University</a></h3>
-              <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-[#0a5640]">B.S. in Mechanical Engineering, Minors in Computer Science, Robotics, and Aerospace</p>
+              <h3 class=" text-2xl font-medium transition duration-300 group-hover:text-[#ffc72a]"><a href="https://www.ndsu.edu" class="link-underline" target="_blank" rel="noopener noreferrer">North Dakota State University</a></h3>
+              <p class="text-zinc-400 mt-1 transition duration-300 group-hover:text-[#0a5640]">B.S. in Mechanical Engineering, Minors in Computer Science, Robotics, and Aerospace Engineering</p>
             </div>
             <p class="text-zinc-500 transition duration-300 group-hover:text-[#ffc72a]">Expected Graduation: 2028</p>
           </div>
@@ -270,7 +280,7 @@
                   <h3 class="text-lg font-medium text-zinc-200">Past Classes</h3>
                   <span class="text-zinc-500 text-sm transition duration-300 group-open/passed:rotate-180">▼</span>
                 </summary>
-                <div class="flex flex-wrap gap-3 justify-center">
+                <div class="flex flex-wrap gap-3 justify-center mb-6">
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 212 - Fundamentals of Visual Communication for Engineers</a>
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 213 - Modeling of Engineering Systems</a>
                   <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 221 - Engineering Mechanics I</a>
@@ -300,37 +310,57 @@
                   <h3 class="text-lg font-medium text-zinc-200">Planned Classes</h3>
                   <span class="text-zinc-500 text-sm transition duration-300 group-open/planned:rotate-180">▼</span>
                 </summary>
+                
+                <p class="mt-4 leading-7 flex justify-center items-center mb-6"><span class="text-zinc-300">fall 2026  </span></p>
+
                 <div class="flex flex-wrap gap-3 justify-center">
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-green-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 412 - Engineering Measurements</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-red-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 421 - Theory of Vibrations</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-blue-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 442 - Machine Design I</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-red-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 443 - Machine Design II</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-blue-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 454 - Heat and Mass Transfer</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-blue-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 457 - Thermal Systems Laboratory</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-red-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 460 - Product Design and Development</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-green-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 461 - Design Project I</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-purple-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 462 - Design Project II</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-purple-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 475 - Automatic Controls</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-green-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 476 - Mechatronics</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-red-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 477 - Finite Element Analysis</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-green-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 478 - Advanced Flow Diagnostics</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-purple-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 483 - Introduction to Computational Fluid Dynamics</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-purple-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 484 - Aerospace Propulsion</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-green-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 488 - Introduction to Aerodynamics</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-blue-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 161 - Computer Science II</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-green-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 213 - Modern Software Development</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-red-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 425 - Machine Learning</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/phys/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-purple-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 430 - Quantum Computation</a>                           
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/ece/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-blue-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ECE 301 - Electrical Engineering I</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/ece/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-red-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ECE 306 - Electrical Engineering Lab I</a>
-                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/engr/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-purple-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ENGR 327 - Ethics, Engineering, and Technology</a>
+
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 161 - Computer Science II</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/ece/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ECE 301 - Electrical Engineering I</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 454 - Heat and Mass Transfer</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 457 - Thermal Systems Laboratory</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 442 - Machine Design I</a>
+
+                </div>       
+
+                <p class="mt-4 leading-7 flex justify-center items-center mb-6"><span class="text-zinc-300">spring 2027  </span></p>                
+
+                <div class="flex flex-wrap gap-3 justify-center ">
+
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 460 - Product Design and Development</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 421 - Theory of Vibrations</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 443 - Machine Design II</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 477 - Finite Element Analysis</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 425 - Machine Learning</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/phys/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">PHYS 350 - Modern Physics</a>                           
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/ece/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ECE 306 - Electrical Engineering Lab I</a>
+
+                </div>       
+
+                <p class="mt-4 leading-7 flex justify-center items-center  mb-6"><span class="text-zinc-300">fall 2027  </span></p>                
+
+                <div class="flex flex-wrap gap-3 justify-center">
+
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 412 - Engineering Measurements</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 461 - Design Project I</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 476 - Mechatronics</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 478 - Advanced Flow Diagnostics</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 488 - Introduction to Aerodynamics</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/csci/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 213 - Modern Software Development</a>
+
+                </div>       
+
+                <p class="mt-4 leading-7 flex justify-center items-center  mb-6"><span class="text-zinc-300">spring 2028  </span></p>                
+
+                <div class="flex flex-wrap gap-3 justify-center">
+
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 462 - Design Project II</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 475 - Automatic Controls</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 483 - Introduction to Computational Fluid Dynamics</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/me/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ME 484 - Aerospace Propulsion</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/phys/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">CSCI 430 - Quantum Computation</a>
+                  <a href="https://catalog.ndsu.edu/course-catalog/descriptions/engr/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm text-center transition duration-300 hover:border-[#0a5640] hover:text-[#ffc72a]">ENGR 327 - Ethics, Engineering, and Technology</a>
                 </div>
-                <p class="mt-4 leading-7 flex justify-center items-center">
-                  <span class="text-blue-300">fall 2026 &ensp;</span>
-                  <span class="text-red-300">spring 2027&ensp;</span>
-                  <span class="text-green-300">fall 2027&ensp;</span>
-                  <span class="text-purple-300">spring 2028&ensp;</span>
-                </p>
               </details>
               </div>
             </div>

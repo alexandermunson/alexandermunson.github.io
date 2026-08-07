@@ -70,13 +70,20 @@ const projects = {
     tags: ['Material Analysis', 'Stress Analysis', 'Lifetime Analysis'],
     links: [],
   },
+  gyroCube:{
+    title: 'Self-Balancing Cube',
+    image: '/images/mountains.JPG',
+    description: 'This is a project I am currently in the early stages of working on! It should be noted that the image of the cube is what I am looking to replicate, and is not something I have designed... yet',
+    tags: ['LQR Control','CAD','Arduino'],
+    links: [],
+  },
   gaussiansplatting: {
     title: 'Lunar Surface Path Planning',
     image: '/images/projects/moon.webp',
-    description: 'This was my project that I worked on for NASA JPL. I looked the related path planning decisions a rover would make under bad lighting conditions in a lunar enviornment based on a 3D gaussian splatted reconstruction against a ground truth.',
+    description: 'This was my project that I worked on for JPL. I researched how lunar specific lighting conditions affect three dimensional gaussian splatting in terms of perception and related path planning decisions.',
     tags: ['Python', 'Neural Radience Fields', 'Gaussian Splatting'],
-    links: [],
-  },
+    links: [{ label: 'View Publication (soon)', href: 'https://google.com' },],
+  }
 };
 
 const modal = document.getElementById('project-modal');
