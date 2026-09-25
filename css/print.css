@@ -1,0 +1,35 @@
+/* print.css — a clean sheet when someone prints the portfolio */
+@page { margin: 18mm 16mm; }
+
+:root {
+  --paper: #fff;
+  --paper-2: #fff;
+  --ink: #000;
+  --ink-2: #222;
+  --ink-3: #444;
+  --rule: #999;
+  --rule-strong: #666;
+  --accent: #000;
+  --accent-text: #000;
+}
+
+.site-header,
+.nav-toggle,
+.hero-links,
+.callouts,
+.lightbox,
+.skip-link { display: none !important; }
+
+body { font-size: 10.5pt; }
+.section { padding-block: 10mm; }
+.project,
+.log-entry,
+.mini { break-inside: avoid; }
+.hero-grid,
+.two-col,
+.project-body,
+.log-entry { grid-template-columns: 1fr !important; }
+.project-figs img { max-height: 70mm; width: auto; }
+a { text-decoration: none; }
+a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; color: var(--ink-3); }
+a[data-lightbox]::after { content: none; }
