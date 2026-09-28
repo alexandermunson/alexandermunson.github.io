@@ -27,7 +27,8 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+/* reserve the scrollbar's width on every page so short (non-scrolling) and long pages line up */
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 1.5rem; scrollbar-gutter: stable; }
 body {
   margin: 0;
   background: var(--bg);
