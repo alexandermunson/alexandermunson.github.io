@@ -54,153 +54,208 @@
     <main id="main" class="content">
       <h1 class="page-title">Projects</h1>
 
-      <article class="project" id="boulderbot">
-        <h3>Boulderbot</h3>
-        <p class="mono">Team lead, 4 people · Bison Robotics · 30 lb · UIUC Robobrawl XI</p>
-        <p>
-          Second-generation combat robot. I took over as captain halfway through development and led
-          design reviews, CAD, fabrication, and competition prep; every major decision traced back to a
-          documented failure mode from Cowbot. High-RPM horizontal beater bar, chain-driven 4WD on
-          brushless motors, and an aluminum truss frame between machined side rails, with the weight
-          budget managed in CAD.
-        </p>
-        <div class="figs figs-2">
-          <figure class="fig">
+      <div class="filters" role="group" aria-label="Filter projects" hidden>
+        <span class="filter-pill" aria-hidden="true"></span>
+        <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter" data-filter="robotics" aria-pressed="false">Robotics</button>
+        <button type="button" class="filter" data-filter="research" aria-pressed="false">Research</button>
+        <button type="button" class="filter" data-filter="coursework" aria-pressed="false">Coursework</button>
+      </div>
+
+      <div class="cards">
+
+        <article class="card feat" id="boulderbot" data-tags="robotics">
+          <figure class="fig shot">
             <a href="assets/images/boulderbot-front-1600.jpg" data-lightbox>
-              <img src="assets/images/boulderbot-front-800.jpg" width="800" height="534" loading="lazy"
+              <img src="assets/images/boulderbot-front-1600.jpg" width="1600" height="1068" loading="lazy"
                    alt="Boulderbot from the front, showing the weapon uprights, chain drive, and orange wheels.">
+              <span class="shot-count" aria-hidden="true">1 / 2</span>
+              <span class="zoom-hint" aria-hidden="true">Click to enlarge</span>
             </a>
             <figcaption>Post-competition chassis.</figcaption>
           </figure>
-          <figure class="fig">
-            <a href="assets/images/boulderbot-cad-790.jpg" data-lightbox>
-              <img src="assets/images/boulderbot-cad-790.jpg" width="790" height="464" loading="lazy"
-                   alt="CAD render of Boulderbot: top plate, side rails, chain drive, and weapon mount.">
-            </a>
-            <figcaption>Full chassis CAD.</figcaption>
-          </figure>
-        </div>
-      </article>
+          <div class="more" hidden>
+            <figure class="fig">
+                <a href="assets/images/boulderbot-cad-790.jpg" data-lightbox>
+                  <img src="assets/images/boulderbot-cad-790.jpg" width="790" height="464" loading="lazy"
+                       alt="CAD render of Boulderbot: top plate, side rails, chain drive, and weapon mount.">
+                </a>
+                <figcaption>Full chassis CAD.</figcaption>
+              </figure>
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Boulderbot</h3>
+              <span class="meta">Team lead, 4 people · Bison Robotics · 30 lb · UIUC Robobrawl XI</span>
+            </div>
+            <p>
+              Second-generation combat robot. I took over as captain halfway through development and led
+              design reviews, CAD, fabrication, and competition prep; every major decision traced back to a
+              documented failure mode from Cowbot. High-RPM horizontal beater bar, chain-driven 4WD on
+              brushless motors, and an aluminum truss frame between machined side rails, with the weight
+              budget managed in CAD.
+            </p>
+            <ul class="tags"><li>Combat robotics</li><li>CAD</li><li>Fabrication</li><li>Chain-driven 4WD</li><li>Team lead</li></ul>
+          </div>
+        </article>
 
-      <article class="project" id="cowbot">
-        <h3>Cowbot</h3>
-        <p class="mono">Contributor, 5 people · Bison Robotics · 30 lb · UIUC Robobrawl X</p>
-        <p>
-          My first combat robot, from concept to competition day. I worked on wheel placement,
-          motor-mount geometry, and the structural framing for the drivetrain, and helped fabricate the
-          weapon. Its failure modes at competition became the design brief for Boulderbot.
-        </p>
-        <div class="figs">
-          <figure class="fig">
+        <article class="card feat" id="cowbot" data-tags="robotics">
+          <figure class="fig shot">
             <a href="assets/images/cowbot-arena-1600.jpg" data-lightbox>
-              <img src="assets/images/cowbot-arena-800.jpg" width="800" height="600" loading="lazy"
+              <img src="assets/images/cowbot-arena-1600.jpg" width="1600" height="1200" loading="lazy"
                    alt="Cowbot in the combat arena at Robobrawl X facing an opponent.">
+              <span class="shot-count" aria-hidden="true">1 / 4</span>
+              <span class="zoom-hint" aria-hidden="true">Click to enlarge</span>
             </a>
             <figcaption>Robobrawl X.</figcaption>
           </figure>
-          <figure class="fig">
-            <a href="assets/images/cowbot-portrait-1200.jpg" data-lightbox>
-              <img src="assets/images/cowbot-portrait-800.jpg" width="800" height="1067" loading="lazy"
-                   alt="Cowbot outdoors with a cow-print top plate labeled MOOOO.">
-            </a>
-            <figcaption>Before a match.</figcaption>
-          </figure>
-          <figure class="fig">
-            <a href="assets/images/cowbot-build-1600.jpg" data-lightbox>
-              <img src="assets/images/cowbot-build-800.jpg" width="800" height="600" loading="lazy"
-                   alt="Drilling a white polymer plate in the Bison Robotics shop.">
-            </a>
-            <figcaption>In the shop.</figcaption>
-          </figure>
-          <figure class="fig">
-            <a href="assets/images/cowbot-cad-942.jpg" data-lightbox>
-              <img src="assets/images/cowbot-cad-942.jpg" width="942" height="636" loading="lazy"
-                   alt="CAD render of Cowbot with green armor panels and a front spinner.">
-            </a>
-            <figcaption>CAD.</figcaption>
-          </figure>
-        </div>
-      </article>
+          <div class="more" hidden>
+            <figure class="fig">
+                <a href="assets/images/cowbot-portrait-1200.jpg" data-lightbox>
+                  <img src="assets/images/cowbot-portrait-800.jpg" width="800" height="1067" loading="lazy"
+                       alt="Cowbot outdoors with a cow-print top plate labeled MOOOO.">
+                </a>
+                <figcaption>Before a match.</figcaption>
+              </figure>
+            <figure class="fig">
+                <a href="assets/images/cowbot-build-1600.jpg" data-lightbox>
+                  <img src="assets/images/cowbot-build-800.jpg" width="800" height="600" loading="lazy"
+                       alt="Drilling a white polymer plate in the Bison Robotics shop.">
+                </a>
+                <figcaption>In the shop.</figcaption>
+              </figure>
+            <figure class="fig">
+                <a href="assets/images/cowbot-cad-942.jpg" data-lightbox>
+                  <img src="assets/images/cowbot-cad-942.jpg" width="942" height="636" loading="lazy"
+                       alt="CAD render of Cowbot with green armor panels and a front spinner.">
+                </a>
+                <figcaption>CAD.</figcaption>
+              </figure>
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Cowbot</h3>
+              <span class="meta">Contributor, 5 people · Bison Robotics · 30 lb · UIUC Robobrawl X</span>
+            </div>
+            <p>
+              My first combat robot, from concept to competition day. I worked on wheel placement,
+              motor-mount geometry, and the structural framing for the drivetrain, and helped fabricate the
+              weapon. Its failure modes at competition became the design brief for Boulderbot.
+            </p>
+            <ul class="tags"><li>Combat robotics</li><li>Drivetrain</li><li>Motor mounts</li><li>Structural framing</li><li>Fabrication</li></ul>
+          </div>
+        </article>
 
-      <article class="project" id="lunar-3dgs">
-        <h3>3D Gaussian Splatting under lunar lighting</h3>
-        <p class="mono">Research intern · NASA JPL · Jun – Aug 2026 · Python, 3DGS</p>
-        <p>
-          Near the lunar poles the sun sits a few degrees above the horizon, lighting terrain with long,
-          hard shadows. I ran ordered image sequences of a lunar surface through a 3DGS pipeline, swept
-          the lighting conditions that matter most at the poles, and quantified where reconstruction
-          quality breaks down and how, to inform perception for rover path planning.
-        </p>
-      </article>
+        <article class="card feat" id="lunar-3dgs" data-tags="research">
+          <div class="card-body">
+            <div class="card-head">
+              <h3>3D Gaussian Splatting under lunar lighting</h3>
+              <span class="meta">Research intern · NASA JPL · Jun – Aug 2026 · Python, 3DGS</span>
+            </div>
+            <p>
+              Near the lunar poles the sun sits a few degrees above the horizon, lighting terrain with long,
+              hard shadows. I ran ordered image sequences of a lunar surface through a 3DGS pipeline, swept
+              the lighting conditions that matter most at the poles, and quantified where reconstruction
+              quality breaks down and how, to inform perception for rover path planning.
+            </p>
+            <ul class="tags"><li>Python</li><li>3DGS</li><li>Computer vision</li><li>NASA JPL</li></ul>
+            <p class="links"><a class="arr" href="#" target="_blank" rel="noopener">View publication (soon)</a></p>
+          </div>
+        </article>
 
-      <article class="project" id="playground">
-        <h3>Playground design package</h3>
-        <p class="mono">Team lead, 4 students · ME 212 Visual Communication for Engineers</p>
-        <p>
-          Site analysis, safety compliance, and a full drawing package for a playground in Fargo: an
-          exploded view with a parts list, plus dimensioned and toleranced detail drawings for each part.
-        </p>
-        <div class="figs">
-          <figure class="fig fig-drawing">
+        <article class="card feat" id="playground" data-tags="coursework">
+          <figure class="fig shot fig-drawing">
             <a href="assets/images/playground-exploded-2200.png" data-lightbox>
-              <img src="assets/images/playground-exploded-400.png" width="400" height="259" loading="lazy"
+              <img src="assets/images/playground-exploded-2200.png" width="2200" height="1424" loading="lazy"
                    alt="Exploded isometric assembly drawing of the playground with numbered balloons and a parts list.">
+              <span class="shot-count" aria-hidden="true">1 / 4</span>
+              <span class="zoom-hint" aria-hidden="true">Click to enlarge</span>
             </a>
             <figcaption>Exploded assembly.</figcaption>
           </figure>
-          <figure class="fig fig-drawing">
-            <a href="assets/images/playground-bb001-2000.png" data-lightbox>
-              <img src="assets/images/playground-bb001-400.png" width="400" height="309" loading="lazy"
-                   alt="Detail drawing BB001, balance beam.">
-            </a>
-            <figcaption>BB001 Balance beam.</figcaption>
-          </figure>
-          <figure class="fig fig-drawing">
-            <a href="assets/images/playground-pf004-2000.png" data-lightbox>
-              <img src="assets/images/playground-pf004-400.png" width="400" height="309" loading="lazy"
-                   alt="Detail drawing PF004, ground to platform stairs.">
-            </a>
-            <figcaption>PF004 Stairs.</figcaption>
-          </figure>
-          <figure class="fig fig-drawing">
-            <a href="assets/images/playground-pf015-2000.png" data-lightbox>
-              <img src="assets/images/playground-pf015-400.png" width="400" height="309" loading="lazy"
-                   alt="Detail drawing PF015, platform to platform ramp.">
-            </a>
-            <figcaption>PF015 Ramp.</figcaption>
-          </figure>
-        </div>
-      </article>
+          <div class="more" hidden>
+            <figure class="fig fig-drawing">
+                <a href="assets/images/playground-bb001-2000.png" data-lightbox>
+                  <img src="assets/images/playground-bb001-400.png" width="400" height="309" loading="lazy"
+                       alt="Detail drawing BB001, balance beam.">
+                </a>
+                <figcaption>BB001 Balance beam.</figcaption>
+              </figure>
+            <figure class="fig fig-drawing">
+                <a href="assets/images/playground-pf004-2000.png" data-lightbox>
+                  <img src="assets/images/playground-pf004-400.png" width="400" height="309" loading="lazy"
+                       alt="Detail drawing PF004, ground to platform stairs.">
+                </a>
+                <figcaption>PF004 Stairs.</figcaption>
+              </figure>
+            <figure class="fig fig-drawing">
+                <a href="assets/images/playground-pf015-2000.png" data-lightbox>
+                  <img src="assets/images/playground-pf015-400.png" width="400" height="309" loading="lazy"
+                       alt="Detail drawing PF015, platform to platform ramp.">
+                </a>
+                <figcaption>PF015 Ramp.</figcaption>
+              </figure>
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Playground design package</h3>
+              <span class="meta">Team lead, 4 students · ME 212 Visual Communication for Engineers</span>
+            </div>
+            <p>
+              Site analysis, safety compliance, and a full drawing package for a playground in Fargo: an
+              exploded view with a parts list, plus dimensioned and toleranced detail drawings for each part.
+            </p>
+            <ul class="tags"><li>Engineering drawings</li><li>Exploded view</li><li>Dimensioning</li><li>Tolerancing</li><li>Safety compliance</li></ul>
+          </div>
+        </article>
 
-      <article class="project" id="line-follower">
-        <h3>Line-following robot</h3>
-        <p class="mono">Team member, 5 students · ENGR 321 Introduction to Robotics</p>
-        <p>
-          Assembled a two-tier kit chassis, integrated a reflectance sensor array, and wrote the
-          line-following controller in Python with a PID loop on the sensor error.
-        </p>
-        <div class="figs figs-2">
-          <figure class="fig fig-drawing">
+        <article class="card sm" id="line-follower" data-tags="robotics coursework">
+          <figure class="fig shot fig-drawing">
             <a href="assets/images/linefollower-cad.png" data-lightbox>
               <img src="assets/images/linefollower-cad.png" width="971" height="698" loading="lazy"
                    alt="CAD render of the line-following robot's two-tier chassis.">
+              <span class="shot-count" aria-hidden="true">1 / 2</span>
+              <span class="zoom-hint" aria-hidden="true">Click to enlarge</span>
             </a>
             <figcaption>Chassis CAD.</figcaption>
           </figure>
-          <figure class="fig">
-            <a href="assets/images/linefollower-photo-1200.jpg" data-lightbox>
-              <img src="assets/images/linefollower-photo-400.jpg" width="400" height="533" loading="lazy"
-                   alt="The assembled line-following robot on a black course with a white line.">
-            </a>
-            <figcaption>As built.</figcaption>
-          </figure>
-        </div>
-      </article>
+          <div class="more" hidden>
+            <figure class="fig">
+              <a href="assets/images/linefollower-photo-1200.jpg" data-lightbox>
+                <img src="assets/images/linefollower-photo-400.jpg" width="400" height="533" loading="lazy"
+                     alt="The assembled line-following robot on a black course with a white line.">
+              </a>
+              <figcaption>As built.</figcaption>
+            </figure>
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Line-following robot</h3>
+              <span class="meta">Team member, 5 students · ENGR 321 Introduction to Robotics</span>
+            </div>
+            <p>
+              Assembled a two-tier kit chassis, integrated a reflectance sensor array, and wrote the
+              line-following controller in Python with a PID loop on the sensor error.
+            </p>
+            <ul class="tags"><li>Python</li><li>PID control</li><li>Reflectance sensors</li></ul>
+          </div>
+        </article>
 
-      <p class="bench"><strong>On the bench:</strong> self-balancing cube, reaction-wheel balancing with LQR control on an ESP32.</p>
+        <article class="card sm" id="balancing-cube" data-tags="robotics">
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Self-balancing cube</h3>
+              <span class="meta">On the bench</span>
+            </div>
+            <p>Reaction-wheel balancing with LQR control on an ESP32.</p>
+            <ul class="tags"><li>LQR</li><li>Reaction wheel</li><li>ESP32</li></ul>
+          </div>
+        </article>
+
+      </div>
 
       <footer class="foot">
-        Alexander Munson · Fargo, North Dakota · Rev 2026-09 ·
+        Alexander Munson · Fargo, North Dakota · Rev 2026-10 ·
         <a href="https://github.com/alexandermunson/alexandermunson.github.io" rel="noopener">source</a>
       </footer>
     </main>

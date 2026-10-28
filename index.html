@@ -78,27 +78,62 @@
              sizes="(min-width: 640px) 200px, 140px"
              width="300" height="375" fetchpriority="high"
              alt="Portrait of Alexander Munson in a black suit jacket, red shirt, and black tie.">
-        <p class="intro">
-          Hey there, I'm Alexander Munson, a Mechancial Engineering student at North Dakota State University pursuing minors in
-          Robotics, Computer Science, and Aerospace Engineering!
-        </p>
+        <div class="hello-text">
+          <p class="intro">
+            Hey there, I'm <span class="name">Alexander Munson</span>, a Mechanical Engineering student at North Dakota State University pursuing minors in
+            Robotics, Computer Science, and Aerospace Engineering!
+          </p>
+        </div>
       </div>
+
+      <dl class="facts">
+        <div><dt>Studying</dt><dd>BSME · NDSU · May 2028</dd></div>
+        <div><dt>Now</dt><dd>R&amp;D Engineering Intern · Marvin Composites</dd></div>
+        <div><dt>Summer 2026</dt><dd>SURF@JPL · NASA </dd></div>
+        <div><dt>Based in</dt><dd>Fargo, North Dakota</dd></div>
+      </dl>
 
       <div class="home-text">
       <p>
         I currently work as an R&amp;D engineering intern at
         Marvin Composites doing materials characterization and process optimization, and spent summer
         2026 at NASA's Jet Propulsion Laboratory studying how lunar lighting affects 3D scene
-        reconstruction for rover path planning. 
+        reconstruction for rover path planning.
       </p>
       <p>
         Off the clock I play guitar and trumpet, go bouldering with the Climbing Club, and longboard around town when Fargo weather allows.
-        Open to 2027 internship roles.
       </p>
       </div>
 
+      <section class="work" aria-labelledby="work-title">
+        <h2 class="page-title" id="work-title">Selected work</h2>
+        <div class="work-grid">
+          <a class="work-card" href="projects.html#boulderbot">
+            <span class="work-img"><img src="assets/images/boulderbot-front-800.jpg" width="800" height="534" loading="lazy" alt=""></span>
+            <span class="work-body">
+              <span class="work-title">Boulderbot</span>
+              <span class="work-meta">Team lead · 30 lb combat robot</span>
+            </span>
+          </a>
+          <a class="work-card" href="projects.html#cowbot">
+            <span class="work-img"><img src="assets/images/cowbot-arena-800.jpg" width="800" height="600" loading="lazy" alt=""></span>
+            <span class="work-body">
+              <span class="work-title">Cowbot</span>
+              <span class="work-meta">Contributor · 30 lb combat robot</span>
+            </span>
+          </a>
+          <a class="work-card wide" href="projects.html#lunar-3dgs">
+            <span class="work-body">
+              <span class="work-title">3D Gaussian Splatting under lunar lighting</span>
+              <span class="work-meta">Research intern · NASA JPL · Jun – Aug 2026</span>
+            </span>
+          </a>
+        </div>
+        <p class="work-all"><a href="projects.html">All projects</a></p>
+      </section>
+
       <footer class="foot">
-        Alexander Munson · Fargo, North Dakota · Rev 2026-09 ·
+        Alexander Munson · Fargo, North Dakota · Rev 2026-10 ·
         <a href="https://github.com/alexandermunson/alexandermunson.github.io" rel="noopener">source</a>
       </footer>
     </main>
