@@ -535,3 +535,16 @@ figcaption { font-size: .8rem; line-height: 1.5; color: var(--cream-3); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- custom scrollbar ---------- */
+html { scrollbar-width: thin; scrollbar-color: #C4291F #110B09; }
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar { width: 12px; height: 12px; }
+  ::-webkit-scrollbar-track { background: #110B09; }
+  ::-webkit-scrollbar-thumb {
+    background: #C4291F; border-radius: 999px;
+    border: 3px solid #110B09; background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: #E5584A; background-clip: padding-box; }
+  ::-webkit-scrollbar-corner { background: #110B09; }
+}

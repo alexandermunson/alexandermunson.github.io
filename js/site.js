@@ -307,3 +307,147 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
     });
   }
 }
+
+/* ---------- 6. Background glow that follows the pointer ---------- */
+// Two soft gradients on GPU-composited layers: a red one that chases the
+// cursor and a wider warm one that lags behind. With no pointer (or on touch)
+// they drift on their own. Reduced-motion visitors get a static glow.
+{
+  const glow = document.createElement('div');
+  glow.className = 'bg-glow';
+  glow.setAttribute('aria-hidden', 'true');
+  glow.innerHTML = '<i class="b"></i><i class="a"></i>';
+  document.body.prepend(glow);
+  const [layerB, layerA] = glow.children;
+
+  const place = (el, x, y, scale = 1) => {
+    el.style.transform = `translate3d(${x.toFixed(1)}px, ${y.toFixed(1)}px, 0) scale(${scale.toFixed(3)})`;
+  };
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    place(layerA, window.innerWidth * 0.72, window.innerHeight * 0.22);
+    place(layerB, window.innerWidth * 0.6, window.innerHeight * 0.35);
+  } else {
+    // Resume where the previous page left off so navigating doesn't reset the glow.
+    let saved = null;
+    try { saved = JSON.parse(sessionStorage.getItem('bg-glow')); } catch (e) { /* storage unavailable */ }
+    const ok = saved && ['tx', 'ty', 'ax', 'ay', 'bx', 'by', 'moved'].every((k) => Number.isFinite(saved[k]));
+
+    let tx = ok ? saved.tx : window.innerWidth * 0.7;                   // target
+    let ty = ok ? saved.ty : window.innerHeight * 0.25;
+    let ax = ok ? saved.ax : tx, ay = ok ? saved.ay : ty;               // fast layer
+    let bx = ok ? saved.bx : tx, by = ok ? saved.by : ty;               // slow layer
+    let lastMove = ok ? saved.moved : -Infinity;                        // wall-clock ms
+    let raf = 0;
+
+    const save = () => {
+      try {
+        sessionStorage.setItem('bg-glow', JSON.stringify({ tx, ty, ax, ay, bx, by, moved: lastMove }));
+      } catch (e) { /* ignore */ }
+    };
+    window.addEventListener('pagehide', save);
+
+    window.addEventListener('pointermove', (event) => {
+      if (event.pointerType === 'touch') return;
+      tx = event.clientX;
+      ty = event.clientY;
+      lastMove = Date.now();
+    }, { passive: true });
+
+    const frame = () => {
+      const wall = Date.now();
+      // After a few idle seconds, wander along a slow loop instead. The loop
+      // depends only on the wall clock, so every page follows the same path.
+      if (wall - lastMove > 4000) {
+        const t = wall / 1000;
+        tx = window.innerWidth * (0.5 + 0.3 * Math.sin(t * 0.21));
+        ty = window.innerHeight * (0.4 + 0.25 * Math.sin(t * 0.17 + 1.3));
+      }
+      const pax = ax, pay = ay;
+      ax += (tx - ax) * 0.09;
+      ay += (ty - ay) * 0.09;
+      bx += (tx - bx) * 0.025;
+      by += (ty - by) * 0.025;
+      const speed = Math.hypot(ax - pax, ay - pay);
+      place(layerA, ax, ay, 1 + Math.min(speed / 60, 0.3)); // swells a little when moving fast
+      place(layerB, bx, by);
+      raf = requestAnimationFrame(frame);
+    };
+
+    const start = () => { if (!raf) raf = requestAnimationFrame(frame); };
+    const stop = () => { cancelAnimationFrame(raf); raf = 0; };
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) { save(); stop(); } else start();
+    });
+    place(layerA, ax, ay);
+    place(layerB, bx, by); // no flash in the corner before the first frame
+    start();
+  }
+}
+
+/* ---------- 7. Theme switch (dark / light blue) ---------- */
+{
+  const root = document.documentElement;
+  const KEY = 'theme';
+  const meta = document.querySelector('meta[name="theme-color"]');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const isLight = () => root.dataset.theme === 'light';
+
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'theme-switch';
+  btn.setAttribute('role', 'switch');
+  btn.setAttribute('aria-label', 'Light theme');
+  btn.innerHTML =
+    '<span class="track"><span class="thumb">' +
+    '<svg class="ico moon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>' +
+    '<svg class="ico sun" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>' +
+    '</span></span><span class="label"></span>';
+  const label = btn.querySelector('.label');
+  (document.querySelector('.sidebar') || document.body).appendChild(btn);
+
+  const sync = () => {
+    btn.setAttribute('aria-checked', String(isLight()));
+    label.textContent = isLight() ? 'Light' : 'Dark';
+    if (meta) meta.setAttribute('content', isLight() ? '#F3ECDC' : '#110B09');
+  };
+
+  const setTheme = (light, remember = true) => {
+    if (light) root.dataset.theme = 'light';
+    else delete root.dataset.theme;
+    if (remember) {
+      try { localStorage.setItem(KEY, light ? 'light' : 'dark'); } catch (e) { /* ignore */ }
+    }
+    sync();
+  };
+
+  btn.addEventListener('click', () => {
+    const next = !isLight();
+    if (reduceMotion.matches) { setTheme(next); return; }
+
+    if (typeof document.startViewTransition === 'function') {
+      const r = btn.getBoundingClientRect();
+      const x = r.left + r.width / 2;
+      const y = r.top + r.height / 2;
+      const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+      const transition = document.startViewTransition(() => setTheme(next));
+      transition.ready.then(() => {
+        root.animate(
+          { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
+          { duration: 700, easing: 'cubic-bezier(.4, 0, .2, 1)', pseudoElement: '::view-transition-new(root)' }
+        );
+      }).catch(() => {});
+    } else {
+      root.classList.add('theme-fade');
+      setTheme(next);
+      setTimeout(() => root.classList.remove('theme-fade'), 450);
+    }
+  });
+
+  // Keep other open tabs in step.
+  window.addEventListener('storage', (event) => {
+    if (event.key === KEY) setTheme(event.newValue === 'light', false);
+  });
+
+  sync();
+}
