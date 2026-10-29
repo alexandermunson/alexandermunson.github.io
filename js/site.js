@@ -385,7 +385,7 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   }
 }
 
-/* ---------- 7. Theme switch (dark / light blue) ---------- */
+/* ---------- 7. Theme switch (dark / light green) ---------- */
 {
   const root = document.documentElement;
   const KEY = 'theme';
@@ -447,6 +447,16 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   // Keep other open tabs in step.
   window.addEventListener('storage', (event) => {
     if (event.key === KEY) setTheme(event.newValue === 'light', false);
+  });
+
+  // Back/forward can restore a page frozen in the browser's page cache, with
+  // whatever theme it had when you left. Re-read the saved choice when it returns.
+  window.addEventListener('pageshow', (event) => {
+    if (!event.persisted) return;
+    let saved = null;
+    try { saved = localStorage.getItem(KEY); } catch (e) { /* ignore */ }
+    const light = saved === 'light';
+    if (light !== isLight()) setTheme(light, false);
   });
 
   sync();
