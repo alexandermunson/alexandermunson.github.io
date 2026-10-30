@@ -1,44 +1,47 @@
 /*
  * site.js — behaviour for alexandermunson.com
- * Three small things, all progressive enhancement:
- *   1. Mobile navigation toggle
+ * Small things, all progressive enhancement:
+ *   1. Mobile navigation toggle (hamburger)
  *   2. Current-section marking in the nav (aria-current)
  *   3. Lightbox for figures (native <dialog>; the links still work without JS)
  * No dependencies.
  */
 
-const header = document.querySelector('.site-header');
+const sidebar = document.querySelector('.sidebar');
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.getElementById('site-nav');
 
-/* ---------- 0. Solid header once the page scrolls past the hero top ---------- */
-if (header) {
-  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 40);
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
-}
-
 /* ---------- 1. Mobile navigation ---------- */
-if (header && navToggle && nav) {
+// Below 880px the sidebar becomes a top bar and everything but the brand
+// folds into a panel behind the hamburger. Without JS the panel stays open.
+if (sidebar && navToggle && nav) {
+  const wide = window.matchMedia('(min-width: 880px)');
   const setOpen = (open) => {
-    header.classList.toggle('nav-open', open);
+    sidebar.classList.toggle('nav-open', open);
     navToggle.setAttribute('aria-expanded', String(open));
+    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Menu');
   };
 
   navToggle.addEventListener('click', () => {
-    setOpen(!header.classList.contains('nav-open'));
+    setOpen(!sidebar.classList.contains('nav-open'));
   });
 
+  // Following a link, tapping outside the bar, or Escape all fold the menu away.
   nav.addEventListener('click', (event) => {
     if (event.target.closest('a')) setOpen(false);
   });
-
+  document.addEventListener('click', (event) => {
+    if (sidebar.classList.contains('nav-open') && !sidebar.contains(event.target)) setOpen(false);
+  });
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && header.classList.contains('nav-open')) {
+    if (event.key === 'Escape' && sidebar.classList.contains('nav-open')) {
       setOpen(false);
       navToggle.focus();
     }
   });
+  wide.addEventListener('change', () => setOpen(false));
+  // A page restored from the back/forward cache should not come back with the menu open.
+  window.addEventListener('pageshow', () => setOpen(false));
 }
 
 /* ---------- 2. Current section in nav ---------- */
@@ -170,6 +173,18 @@ if (lightbox && typeof lightbox.showModal === 'function') {
     if (event.key === 'ArrowLeft') { event.preventDefault(); show(index - 1); }
     else if (event.key === 'ArrowRight') { event.preventDefault(); show(index + 1); }
   });
+
+  // Swipe left/right on touch screens to step through images.
+  let touchX = null;
+  lightbox.addEventListener('touchstart', (event) => {
+    touchX = event.touches.length === 1 ? event.touches[0].clientX : null;
+  }, { passive: true });
+  lightbox.addEventListener('touchend', (event) => {
+    if (touchX === null || group.length < 2) return;
+    const dx = event.changedTouches[0].clientX - touchX;
+    touchX = null;
+    if (Math.abs(dx) > 50) show(index + (dx < 0 ? 1 : -1));
+  }, { passive: true });
 
   // A click on the backdrop (outside the figure and buttons) closes the dialog.
   lightbox.addEventListener('click', (event) => {
@@ -404,7 +419,7 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
     '<svg class="ico sun" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>' +
     '</span></span><span class="label"></span>';
   const label = btn.querySelector('.label');
-  (document.querySelector('.sidebar') || document.body).appendChild(btn);
+  (document.querySelector('.side-panel-inner') || document.querySelector('.sidebar') || document.body).appendChild(btn);
 
   const sync = () => {
     btn.setAttribute('aria-checked', String(isLight()));
